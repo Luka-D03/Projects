@@ -1,0 +1,146 @@
+@import url(intro.css);
+@import url(pics.css);
+
+:root {
+    --FI: linear-gradient(45deg,transparent 10px, #000000 15px, #f17304 25px), linear-gradient(#e20c0c 10px, #f17304 25px), linear-gradient(-135deg, transparent 10px, #e20c0c 15px), linear-gradient(#e20c0c 5px, transparent 15px), linear-gradient(-135deg, transparent 10px, #e20c0c 15px);
+    --FS: 30px 15px, 15px 30px, 15px 30px, 45px 15px, 15px 15px;
+    --FP: 0px 90px, 15px 60px, 30px 45px, 15px 30px, 45px 15px;
+
+    --AI: linear-gradient(45deg, transparent 10px, #000000 15px, #f17304 25px), linear-gradient(#e20c0c 10px, #f17304 25px), linear-gradient(#e20c0c 5px, transparent 15px), linear-gradient(45deg, transparent 10px,  #000000 15px, #f17304 25px), linear-gradient(-135deg, transparent 10px, #e20c0c 15px, #f17304 50px);
+    --AS: 30px 15px, 15px 30px, 15px 15px, 30px 15px, 15px 75px;
+    --AP: 0px 90px, 15px 60px, 15px 30px, 30px 90px, 45px 15px;
+
+    --RI: linear-gradient(45deg, transparent 10px, #000000 15px, #f17304 25px), linear-gradient(#f17304 10px, #f17304 10px), linear-gradient(45deg, transparent 10px, #000000 15px, #f17304 25px), /* linear-gradient(#ff69b4 10px, #e20c0c 10px), */ linear-gradient(45deg, transparent 10px, #f17304 15px, #e20c0c 20px), linear-gradient(-135deg, transparent 10px, #e20c0c 15px, #f17304), linear-gradient(#e20c0c 5px, transparent 15px);
+    --RS: 30px 15px, 15px 15px, 30px 15px, /* 15px 15px, */ 15px 15px, 15px 75px, 15px 15px;
+    --RP: 0px 90px, 15px 75px, 30px 90px, /* 45px 75px, */ 30px 60px, 45px 15px, 15px 30px;
+
+    --OI: linear-gradient(45deg, transparent 10px, #000000 15px, #f17304 50px), linear-gradient(-135deg, transparent 10px, #e20c0c 15px, #f17304 55px), linear-gradient(#e20c0c, #f17304);
+    --OS: 60px 15px, 15px 75px, 15px 45px;
+    --OP: 0px 90px, 45px 15px, 15px 30px;
+
+    --JI: linear-gradient(45deg, transparent 10px, #000000 15px, #011fb8 50px), linear-gradient(-135deg, transparent 10px, #01b80d 15px, #011fb8 55px), linear-gradient(-135deg, transparent 10px, #011fb8 15px);
+    --JS: 60px 15px, 15px 75px, 15px 15px;
+    --JP: 0px 90px, 45px 15px, 15px 60px;
+
+    --JOI: linear-gradient(45deg, transparent 10px, #000000 15px, #011fb8 50px), linear-gradient(-135deg, transparent 10px, #01b80d 15px, #011fb8 55px), linear-gradient(#01b80d, #011fb8);
+    --JOS: 60px 15px, 15px 75px, 15px 45px;
+    --JOP: 0px 90px, 45px 15px, 15px 30px;
+
+    --VI: linear-gradient(45deg, transparent 10px, #01b80d 15px, transparent 25px), linear-gradient(45deg, transparent 10px, #01b80d 15px, transparent 25px), linear-gradient(-135deg, transparent 10px, #01b80d 15px, transparent 25px), linear-gradient(-45deg, transparent 10px, #01b80d 15px, transparent 25px), linear-gradient(135deg, transparent 10px, #011fb8 15px, transparent 25px), linear-gradient(-45deg, transparent 10px, #01b80d 15px, transparent 25px), linear-gradient(135deg, transparent 10px, #01b80d 15px, transparent 25px), linear-gradient(135deg, transparent 10px, #011fb8 15px, transparent 25px), linear-gradient(-45deg, transparent 10px, #011fb8 15px, transparent 25px), linear-gradient(-135deg, transparent 10px, #011fb8 15px, transparent 25px), linear-gradient(-135deg, transparent 10px, #011fb8 15px, transparent 25px), linear-gradient(45deg, transparent 10px, #011fb8 15px, transparent 25px), linear-gradient(-45deg, transparent 10px, #000000 15px, #011fb8 15px), linear-gradient(45deg, transparent 10px, #000000 15px, #011fb8 15px);
+    --VS: 15px 15px, 15px 15px, 15px 15px, 15px 15px, 15px 15px, 15px 15px, 15px 15px, 15px 15px, 15px 15px, 15px 15px, 15px 15px, 15px 15px, 15px 15px, 15px 15px;
+    --VP: 0px 45px, 15px 60px, 15px 45px, 30px 60px, 30px 80px, 45px 45px, 30px 45px, 45px 65px, 45px 80px, 0px 65px, 15px 80px, 0px 80px, 30px 95px, 15px 95px;
+
+    --EI: linear-gradient(45deg, transparent 10px, #000000 15px, #011fb8 50px), linear-gradient(-135deg, transparent 10px, #011fb8 15px), linear-gradient(#01b80d 5px, #011fb8 10px), linear-gradient(-135deg, transparent 10px, #01b80d 15px, #011fb8 25PX), linear-gradient(#01b80d 5px, transparent 15px), linear-gradient(-135deg, transparent 10px, #01b80d 15px);
+    --ES: 60px 15px, 15px 15px, 15px 15px, 15px 30px, 45px 15px, 15px 15px;
+    --EP: 0px 90px, 45px 75px, 15px 60px, 30px 45px, 15px 30px, 45px 15px;
+
+    --MI: linear-gradient(45deg, transparent 10px, #000000 15px, #011fb8 25px), linear-gradient(#01b80d 10px, #011fb8 50px), linear-gradient(-135deg, transparent 10px, #01b80d 15px), linear-gradient(45deg, transparent 10px, #01b80d 15px), linear-gradient(#01b80d 10px, #01b80d 10px), linear-gradient(45deg, transparent 10px, #000000 15px, #011fb8 25px), linear-gradient(-135deg, transparent 10px, #01b80d 15px, #011fb8 50px);
+    --MS: 30px 15px, 15px 60px, 15px 15px, 30px 15px, 15px 15px, 30px 15px, 15px 75px;
+    --MP: 0px 90px, 15px 30px, 30px 15px, 30px 45px, 45px 30px, 60px 90px, 75px 15px;
+}
+
+/* * {
+    outline: 1px solid black;
+} */
+
+html, body {
+    background-color: whitesmoke;
+}
+
+.F{
+    width: 60px;
+    height: 105px;
+    background-repeat: no-repeat;
+    background-image: var(--FI);
+    background-position: var(--FP);
+    background-size: var(--FS);
+    float: left;
+    margin-left: 3.5em;
+}
+
+.A {
+    width: 60px;
+    height: 105px;
+    background-repeat: no-repeat;
+    background-image: var(--AI);
+    background-size: var(--AS);
+    background-position: var(--AP);
+    float: left;
+    margin-left: 15px;
+}
+
+.R {
+    width: 60px;
+    height: 105px;
+    background-repeat: no-repeat;
+    background-image: var(--RI);
+    background-size: var(--RS);
+    background-position: var(--RP);
+    float: left;
+    margin-left: 15px;
+}
+
+.O {
+    width: 60px;
+    height: 105px;
+    background-repeat: no-repeat;
+    background-image: var(--OI);
+    background-size: var(--OS);
+    background-position: var(--OP);
+    float: left;
+    margin-left: 15px;
+}
+
+.J {
+    width: 60px;
+    height: 105px;
+    background-repeat: no-repeat;
+    background-image: var(--JI);
+    background-size: var(--JS);
+    background-position: var(--JP);
+    float: left;
+}
+
+.JO {
+    width: 60px;
+    height: 105px;
+    background-repeat: no-repeat;
+    background-image: var(--JOI);
+    background-size: var(--JOS);
+    background-position: var(--JOP);
+    float: left;
+    margin-left: 15px;
+}
+
+.V {
+    width: 60px;
+    height: 105px;
+    background-repeat: no-repeat;
+    background-image: var(--VI);
+    background-size: var(--VS);
+    background-position: var(--VP);
+    float: left;
+    margin-left: 15px;
+}
+
+.E {
+    width: 60px;
+    height: 105px;
+    background-repeat: no-repeat;
+    background-image: var(--EI);
+    background-size: var(--ES);
+    background-position: var(--EP);
+    float: left;
+    margin-left: 15px;
+}
+
+.M {
+    width: 90px;
+    height: 105px;
+    background-repeat: no-repeat;
+    background-image: var(--MI);
+    background-size: var(--MS);
+    background-position: var(--MP);
+    float: left;
+    margin-left: 15px;
+}

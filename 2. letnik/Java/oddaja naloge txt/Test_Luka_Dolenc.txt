@@ -1,0 +1,78 @@
+Naloga 1:
+int vsota = 0;//inicializacija vsote
+		
+for(int i = 10; i < 53; i++) {//interval med 9 in 53
+			
+	System.out.print(i);//izpisava števila
+			
+	if(i < 52) {//izpisava ',' in '.'
+		System.out.print(", ");
+	} else {
+		System.out.print(".");
+		System.out.println();
+	}
+	if(i % 2 == 0) {//seštevanje vsote sodih števil
+		vsota += i;
+	}
+}
+System.out.println("Vsota sodih števil je: "+vsota);//izpis vsote
+--------------------------------------------------------------------------------------------------------------------------
+Naloga 2:
+for(int i = 1; i <= 8; i++) {//interval, ki prebira vnesena števila
+				
+	System.out.print("Vnesi "+i+". število: ");//branje števil
+	int x = vhod.nextInt();//branje števil
+				
+	if(x % 2 == 0 && x % 5 == 0 && x % 3 != 0) {//preverjanje deljivosti ter izpis
+		System.out.println("Število "+x+" je deljivo z 2 in s 5 in ni deljivo s 3");
+	}
+}
+--------------------------------------------------------------------------------------------------------------------------
+Naloga 3:
+int max = -999999999, min = 999999999, max2 = -999999999, rezultat = 0;//incializacija števil
+			
+for(int i = 1; i <= 10; i++) {	//interval za branje 10. števil
+	System.out.print("Vnesi "+i+". število: ");//izpis Vnesi #. število: 
+	int x = vhod.nextInt();//branje števila
+				
+	if(x >= max) {//preverjanje največjega števila in drugega največjega števila
+		max2 = max;
+		max = x;
+	}
+				
+	if(x < min) {//preverjanje najmanjšega števila
+		min = x;
+	}
+}
+			
+System.out.println("Največje število je: "+max);//izpis največjega števila
+System.out.println("Najmanjše število je: "+min);//izpis najmanjšega števila
+System.out.println("Drugo največje število je: "+max2);//izpis drugega največjega števila
+			
+for(max2 += 1; max2 < max; max2 = max2 + 2) {//	interval med drugim največjim vnesenim številom in največjim vnesenim številom
+	rezultat += max2;//seštevanje vsakega drugega števila
+}
+			
+System.out.println("Vsota števil je: "+rezultat);//izpis rezultata.
+--------------------------------------------------------------------------------------------------------------------------
+Naloga 4:
+//inicializacija števil in poljubnega števila
+System.out.print("Vnesi poljubno število: ");//izpis Vnesi poljubno število:
+int d = vhod.nextInt();//vnos poljubnega števila
+int z = 1;
+int y = 1;
+for (int i = 1; i <= d; i++) {//interval, ki glede na vnešeno število se ponovi tolikokrat kolikor je vneseno število
+	for (int x = d; x > z; x--) {//interval, ki izpiše presledke pred vsemi zvezdicami
+		System.out.print(" ");
+	}
+	for (int j = 1; j <= i; j++) {//interval, ki izpiše zvezdice
+		System.out.print("*");
+		for(int x = 0; x <= y; x++) {//interval, ki izpiše presledke med zvezdicami
+			System.out.print(" ");
+		}
+		y++;//povečava števca
+	}
+	z++;
+	y=0;
+	System.out.println();//pomik v novo vrstico
+}

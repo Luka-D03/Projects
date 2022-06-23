@@ -1,0 +1,105 @@
+body{
+	background-color: #6B6673;
+	
+}
+ul, li {
+	list-style-type: none;
+	float: left;
+}
+
+li{
+	margin: 33px;
+	padding: 16px;
+	background-color: #CBC1D9;
+	border-radius: 15px;
+	display: block;
+}
+
+li:hover{
+    background-color: #DDB0F5;
+    cursor: pointer;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+
+/*a:hover{
+	color: #302736;
+}
+*/
+.zgornja_vrstica{
+	background-color: #A79FB3;
+	width: 80%;
+	margin-left: 10%;
+	float: left;
+}
+
+.logotip{
+	width: 30%;
+	height: 250px;
+	background-color: #CBC1D9;
+	margin: 16px 0px 16px 16px;
+	float: left;
+}
+
+.logo1{
+	width: 90%;
+	height: 228px;
+	padding: 16px;
+}
+
+.meni{
+	width: 60%;
+	float: left;
+	color: white;
+}
+
+.praznina {
+	width: 100%;
+	height: 33px;
+	clear: both;
+}
+
+.tezava {
+	text-align: center;
+	color: white;
+	font-size: 25px;
+}
+
+.video {
+	text-align: center;
+	border: 2px solid darkred;
+	width: 80%;
+	margin: 0% 10%;
+}
+
+#opis {
+	display: none;
+	color: white;
+	background-color: #4F4F74;
+	border: 2px solid darkred;
+	font-size: 20px; 
+	padding: 33px 0px;
+	text-align: center;
+	width: 80%;
+	margin: 0% 10%;
+}
+
+#idk:hover + #opis {
+	display: block;
+	color: white; 
+
+}
+
+li:hover + #opis {
+	display: block;
+	color: white; 
+
+}
+
+
+          
+        

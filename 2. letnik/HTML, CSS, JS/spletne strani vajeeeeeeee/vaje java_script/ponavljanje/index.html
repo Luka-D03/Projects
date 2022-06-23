@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponavljanje</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/js.js"></script>
+</head>
+<body>
+    <div>
+        <form>
+            Vnesi ime: <input type="text" id="ime">
+            <br>
+            Vnesi priimek: <input type="text" id="priimek">
+            <br>
+            Izberi spol: <select id="spol">
+                <option value="m">Moški</option>
+                <option value="z">Ženski</option>
+            </select>
+            <br>
+            <button type="button" onclick="pozdrav()">Pozdravi me!</button>
+        </form>
+    </div>
+    <br>
+    <div id="vsebina"><i>Tukaj se bo pokazal naš pozdrav!</i></div>
+    <div>
+        Vnesi število: <input type="number" id="stevilo" onchange="izpis_st()">
+    </div>
+    <div id="izpis_st"></div>
+</body>
+</html>

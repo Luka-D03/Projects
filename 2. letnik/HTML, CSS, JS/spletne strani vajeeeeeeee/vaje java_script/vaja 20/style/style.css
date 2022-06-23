@@ -1,0 +1,18 @@
+body {
+	background: gray;
+	text-align: center;
+}
+
+img {
+	width: 500px;
+}
+
+.rezultat {
+	width: 500px;
+	padding: 50px;
+	border: 10px solid yellow;
+	border-radius: 10px;
+	background-color: orange;
+	margin-left: 35%;
+}
+

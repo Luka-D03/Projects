@@ -1,0 +1,83 @@
+/*
+	font-family: 'Orbitron', sans-serif;
+	font-family: 'Julius Sans One', sans-serif;
+*/
+
+body {
+	background-color: #6EDBB6;
+}
+
+h1 {
+	text-align: center;
+	color: #159900;
+	font-family: 'Orbitron', sans-serif;
+}
+
+img:hover {
+	border: 5px solid  orange;
+}
+
+img {
+	border: 5px solid darkgreen;
+}
+
+.slike {
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+.praznina {
+	width: 100%;
+	height: 33px;
+	clear: both;
+}
+
+.opis {
+	width: 45%;
+	float: left;
+	margin-left: 33px;
+	border: 10px double darkgreen;
+}
+
+#prikaz {
+	width: 50%;
+	height: 700px;
+	/*border: 2px solid orange;*/
+	float: left;
+}
+
+#medo:hover ~ #prikaz {
+	background-image: url('../images/Velike/medved.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 5px solid orange;
+}
+
+#lisica:hover ~ #prikaz {
+	background-image: url('../images/Velike/lisica.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 5px solid orange;
+}
+
+#volk:hover ~ #prikaz {
+	background-image: url('../images/Velike/jelen.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 5px solid orange;
+}
+
+#jelen:hover ~ #prikaz {
+	background-image: url('../images/Velike/volk.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 5px solid orange;
+}
+
+#pujs:hover ~ #prikaz {
+	background-image: url('../images/Velike/merjasec.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 5px solid orange;
+}

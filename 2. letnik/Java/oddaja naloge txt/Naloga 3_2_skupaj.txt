@@ -1,0 +1,127 @@
+Naloga 1:
+
+public class vaja_1 {
+	//Napiši program, ki izpiše števila in vsoto števil na intervalu med 3 in 23.
+	public static void main(String[] args) {
+		
+		int v = 0;
+		
+		System.out.println("Števila med 3 in 23 so:");
+		
+		for(int i = 4; i<23; i++)
+		{
+			System.out.print(i+" ");
+			v = v + i;
+		}
+		System.out.println();
+		System.out.print("Vsota števil med 3 in 23 je: "+v);
+		
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------------------------------------
+Naloga 2:
+import java.util.Scanner;
+
+public class vaja_2 {
+	//Napiši program, ki prebere deset števil, izpiše največje število in vsoto prvih petih prebranih števil.
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner(System.in);
+		
+		int max = 0;
+		int v = 0;
+		int y = 0;
+		
+		for(int i = 1; i<=10; i++)
+		{
+			y++;
+			System.out.print("Vnesi "+i+". število: ");
+			int x = vhod.nextInt();
+			if(x>max)
+			{
+				max = x;
+			}
+			if(y<=5)
+			{
+				v = v+x;
+			}
+		}
+		System.out.print("Največje število je: "+max);
+		System.out.println();
+		System.out.print("Vsota prvih petih števil je: "+v);
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------------------------------------
+Naloga 3:
+import java.util.Scanner;
+
+public class vaja_3 {
+	//Napiši program, ki izpiše vsako X število na intervalu med X in Y.
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner(System.in);
+		
+		System.out.print("Vnesi prvo število: ");
+		int x = vhod.nextInt();
+		System.out.print("Vnesi drugo število: ");
+		int y = vhod.nextInt();
+		
+		System.out.println("Števila med "+x+" in "+y+" so:");
+		x++;
+		for(x = x; x<y; x++)
+		{
+			System.out.print(x+" ");
+		}
+		
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------------------------------------
+Naloga 4:
+import java.util.Scanner;
+
+public class vaja_4 {
+	//Napiši program, ki prebere dve števili. Ti dve števili vzame za meji intervala. 
+	//Bodi pozoren, da manjše prebrano število vzameš za spodnjo mejo, večje prebrano pa za zgornjo mejo intervala (preveri s pomočjo if stavka!). 
+	//Vsako tretje število na intervalu sešteje in izpiše rezultat. 
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner(System.in);
+		
+		System.out.print("Vnesi prvo število: ");
+		int x = vhod.nextInt();
+		System.out.print("Vnesi drugo število: ");
+		int y = vhod.nextInt();
+		int h = 2;
+		int v = 0;
+		
+		if(y>x)
+		{
+			x++;
+			for(x = x; x<y; x++)
+			{
+				h++;
+				if(h == 3)
+				{
+					v = v + x;
+					h = 0;
+				}
+			}
+		}
+		
+		if(x>y)
+		{
+			y++;
+			for(y = y; y<x; y++)
+			{
+				h++;
+				if(h == 3)
+				{
+					v = v + y;
+					h = 0;
+				}
+			}
+		}
+		System.out.print("Seštevek vsakega trtjega števila na intervalu je: "+v);
+	}
+
+}

@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class naloga4 {
+//Napiši program, ki glede na vneseno število izriše zvezdice. Primer števila 4:
+//	   *
+
+//	  * *
+
+//	 * *  *
+
+//	* *  *   *
+
+	public static void main(String[] args) {
+		try(Scanner vhod = new Scanner(System.in)){
+		
+			System.out.print("Vnesi poljubno število: ");
+			int d = vhod.nextInt();
+			int z = 1;
+			int y = 1;
+			int w = d;
+			for (int i=1; i<=d; i++)
+			{
+				for (int x=d; x>=z; x--)
+				{
+					System.out.print(" ");
+				}
+				for (int j=1; j<=i; j++)
+				{
+					System.out.print("*");
+					for(int x=0; x<=y; x++)
+					{
+						System.out.print(" ");
+					}
+					y++;
+				}
+				z++;
+				y=0;
+				d--;
+				System.out.println();
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+
+public class naloga1 {
+//Napiši program, ki izpiše vsa števila med 9 in 53 in vsoto sodih števil na tem intervalu.
+
+	public static void main(String[] args) {
+		
+		int vsota = 0;
+		
+		for(int i = 10; i < 53; i++) {
+			if(i < 52) {
+				
+			} else {
+				
+			}
+		}
+
+	}
+
+}

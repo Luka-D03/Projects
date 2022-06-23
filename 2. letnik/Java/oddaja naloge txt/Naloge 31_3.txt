@@ -1,0 +1,107 @@
+Vaja 1:
+import java.util.Scanner;
+
+//Napiši program, ki prebere določeno število vnosov (to mu določimo na začetku - vnesi število vnosov). 
+//Nato izpiše prebrana števila, ki so deljiva s številko števila vnosov, ki smo jo določili na začetku.
+
+public class vaja1 {
+
+	public static void main(String[] args) {
+		try (Scanner in = new Scanner(System.in)) {
+			
+			System.out.print("Vnesi število vnosov: ");
+			int z = in.nextInt();
+			
+			for(int i = 1; i <= z; i++) {
+				
+				System.out.print("Vnesi "+i+". število: ");
+				int x = in.nextInt();
+				
+				if(x % z == 0) {
+					System.out.println("Število "+x+" je deljivo z "+z);
+				}
+				
+			}
+			
+		}
+
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------------------
+Vaja 2:
+import java.util.Scanner;
+
+//Napiši program, ki prebere osem števil in preveri, ali je posamezno število deljivo s 3.
+//Izmed števil deljivih s 3 izpiše števila, ki so deljiva z 2 in niso deljiva s 5.
+
+public class vaja2 {
+
+	public static void main(String[] args) {
+		try (Scanner in = new Scanner(System.in)) {
+			
+			for(int i = 1; i <= 8; i++) {
+				
+				System.out.print("Vnesi "+i+". število: ");
+				int x = in.nextInt();
+				
+				if(x % 3 == 0) {
+					if(x % 2 == 0 && x % 5 != 0) {
+						System.out.println("Število "+x+" je deljivo z 2 in s 3 in ni deljivo s 5");
+					}
+						
+				}
+				
+			}
+			
+		}
+
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------------------
+Vaja 3:
+import java.util.Scanner;
+
+//Napiši program, ki izpiše vsoto števil deljivih z X, 2 in 5 na intervalu med 2 in Y+3.
+
+public class vaja3 {
+
+	public static void main(String[] args) {
+		try (Scanner in = new Scanner(System.in)) {
+			
+			int vsota = 0;
+			
+			System.out.print("Vnesi prvo poljubno število: ");
+			int x = in.nextInt();
+			
+			System.out.print("Vnesi prvo poljubno število: ");
+			int y = in.nextInt();
+			
+			for(int i = 2; i < y + 2; i++) {
+				
+				if(i % x == 0) {
+					vsota += i;
+				}
+				else {
+					if(i % 2 == 0) {	
+						vsota += i;
+					}
+					else {
+						if(i % 5 == 0) {
+							vsota += i;
+						}
+						
+					}
+					
+				}
+
+			}
+			
+			System.out.print("Vsota je: "+vsota);
+
+		}
+
+	}
+
+}

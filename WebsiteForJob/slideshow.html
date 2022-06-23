@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="styles/slideshow.css">
+    <script src="JS/slideshow.js" defer></script>
+</head>
+<body>
+
+    <!-- Back button and download button -->
+    <a href="index.html" class="back"><img src="/images/left.png" alt="left arrow" class="back_img"></a>
+    <a href="/slideshow.html" class="download" download><img class="download_img" src="/images/download_icon.png" alt="download icon"></a>
+
+        <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 12</div>
+            <img src="images/panel pictures/panel_1.JPG" style="width:100%; height: 90vh;">
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 12</div>
+            <img src="images/panel pictures/panel_2.JPG" style="width:100%; height: 90vh;">
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 12</div>
+            <img src="images/panel pictures/panel_3.JPG" style="width:100%; height: 90vh;">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 12</div>
+            <img src="images/panel pictures/panel_4.JPG" style="width:100%; height: 90vh;">
+        </div>
+    
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 12</div>
+            <img src="images/panel pictures/panel_5.JPG" style="width:100%; height: 90vh;">
+        </div>
+    
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 12</div>
+            <img src="images/panel pictures/panel_6.JPG" style="width:100%; height: 90vh;">
+        </div>
+    
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 12</div>
+            <img src="images/other good pics/IMG_4727.JPG" style="width:100%; height: 90vh;">
+        </div>
+    
+
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 12</div>
+            <img src="https://picsum.photos/1000?random=7" style="width:100%; height: 90vh;">
+        </div>
+    
+
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 12</div>
+            <img src="https://picsum.photos/1000?random=8" style="width:100%; height: 90vh;">
+        </div>
+    
+
+        <div class="mySlides fade">
+            <div class="numbertext">10 / 12</div>
+            <img src="https://picsum.photos/1000?random=9" style="width:100%; height: 90vh;">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">11 / 12</div>
+            <img src="https://picsum.photos/1000?random=10" style="width:100%; height: 90vh;">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">12 / 12</div>
+            <img src="https://picsum.photos/1000?random=11" style="width:100%; height: 90vh;">
+        </div>
+    
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+    </div>
+</body>
+</html>

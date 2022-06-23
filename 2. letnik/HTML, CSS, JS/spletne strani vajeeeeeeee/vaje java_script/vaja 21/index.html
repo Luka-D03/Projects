@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaja 21</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="💤">
+        <h1>Zaporedje</h1>
+        <form class="zaporedejInput">
+            <input type="number" class="vnos" id="MIN" placeholder="Vpiši spodnjo mejo zaporedja.">
+            <input type="number" class="vnos mar" id="MAX" placeholder="Vpiši Zgornjo mejo zaporedja.">
+            <input type="number" class="vnos posebnez mar" id="DELITELJ" placeholder="Vpiši število za deljenje.">
+        </form>
+        <hr class="line">
+        <div id="butns">
+            <button id="👁‍🗨" onclick="zaporedje()">Prikaži zaporedje z označenimi števili</button>
+            <button id="💢" onclick="reset()">Resetiraj zaporedje</button>
+        </div>
+        <br>
+        <div id="izpis"></div>
+        <div class="🤯" id="🔳"></div>
+    </div>
+
+    <div class="🎉">
+        <h1>Preračunavanje števil v obliki poštevanke</h1>
+        <form>
+            <input type="number" class="vnos2" id="VRST" placeholder="Vpiši št. vrstic">
+            <hr class="line">
+            <input type="number" class="vnos2" id="STOL" placeholder="Vpiši št. stolpcev">
+            <hr class="line">
+            <input type="number" class="vnos2 posebnez" id="DELITELJ2" placeholder="Vpiši število za deljenje.">
+        </form>
+        <hr class="line">
+        <div id="butns">
+            <button id="👁‍🗨1" onclick="tabela()">Prikaži tabelo</button>
+            <button id="💢1" onclick="reset2()">Resetiraj tabelo</button>
+        </div>
+        <div id="izpis2"></div>
+        <div class="🤯" id="🙌"></div>
+    </div>
+</body>
+</html>

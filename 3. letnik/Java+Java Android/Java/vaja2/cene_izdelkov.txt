@@ -1,0 +1,8 @@
+Napiši program, ki prebira cene izdelkov. Ko vnesemo vse cene, določimo popust in izpišemo končno ceno.
+
+Napiši program, ki prebira cene izdelkov. Dodaj možnost, da poljubnemu izdelku dodaš popust. Na koncu izpiši končno ceno.
+
+Napiši program, ki prebira cene izdelkov. Dodaj možnost, da poljubnemu izdelku dodaš popust in da ob izbiri lahko iz celotne cene odstraniš najcenejši izdelek.
+Na koncu izpiši končno ceno.
+
+Program nadgradi tako, da vneses cene treh kupcev. Dodaj možnost, da najdražjemu nakupu znižas ceno za poljuben procent. 

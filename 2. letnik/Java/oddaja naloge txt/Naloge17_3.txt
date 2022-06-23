@@ -1,0 +1,137 @@
+Vaja1:
+//Napiši program, ki izpiše vsako drugo število med 3 in 43 in vsoto teh števil na intervalu
+public class vaja1 {
+
+	public static void main(String[] args) {
+		
+		int x = 1;
+		int vsota = 0;
+		
+		System.out.println("Vsako drugo število je: ");
+		
+		for(int i = 4; i < 43; i++)
+		{
+			x++;
+			if(x == 2)
+			{
+				System.out.println(i);
+				x = 0;
+			}
+			vsota += i;
+		}
+		System.out.println("Vsota števil je:"+vsota);
+
+	}
+
+}
+-------------------------------------------------------------------------------------------------------------------------
+Vaja2:
+import java.util.Scanner;
+
+//Napiši program, ki prebere 7 števil in izpiše tista, ki so liha in hkrati deljiva s 5.
+public class vaja2 {
+
+	public static void main(String[] args) {
+		try (Scanner vhod = new Scanner(System.in)) {
+			for(int i = 1; i <= 7; i++)
+			{
+				System.out.print("Prosim vnesite "+i+". število: ");
+				int x = vhod.nextInt();
+				
+				if(x % 2 == 1 && x % 5 == 0)
+				{
+					System.out.println();
+					System.out.println(x+" je število ki je liho in hkrati deljivo s 5.");
+					System.out.println();
+				}
+			}
+		}
+
+	}
+
+}
+-------------------------------------------------------------------------------------------------------------------------
+Vaja3:
+import java.util.Scanner;
+
+//Napiši program, ki prebere 12 števil in izpiše največje in drugo največje število. 
+//Na intervalu med najmanjšim in največjim vnesenim številom sešteje vsako drugo število in izpiše rezultat.
+public class vaja3 {
+
+	public static void main(String[] args) {
+		try (Scanner vhod = new Scanner(System.in)) {
+			
+			int max = -999999999;
+			int max2 = -999999999;
+			int min = 999999999;
+			int y = 1;
+			int vsota = 0;
+			
+		
+			for(int i = 1; i <= 12; i++)
+			{
+				System.out.print("Vnesi "+i+". število: ");
+				int x = vhod.nextInt();
+				
+				if (x >= max) 
+				{
+		            max2 = max;
+		            max = x;
+				}
+				
+				if(x < min)
+				{
+					min = x;
+				}
+			}
+			System.out.println("Največje število je: "+max);
+			System.out.println("Drugo največje število je: "+max2);
+			System.out.println("Najmanjše število je: "+min);
+
+			for(min = min + 1; min < max; min++)
+			{
+				y++;
+				if(y == 2)
+				{
+					vsota += min;
+					y = 0;
+				}
+			}
+			System.out.println("Vsota vsakega drugega števila je: "+vsota);
+		}
+	}
+}
+-------------------------------------------------------------------------------------------------------------------------
+Vaja4:
+
+//Napiši program, ki glede na vneseno število izriše zvezdice (bodi pozoren na število presledkov pred izpisom zvezdic v vrstici in število presledkov med zvezdicami). 
+//Primer števila 3:
+
+// *  *  *
+//  *  *
+//   *
+public class vaja4 {
+
+	public static void main(String[] args) {
+		int z = 4;
+		int y = 1;
+		
+		for(int i = 1; i <= 3; i++)
+		{
+			for(int x = 1; x <= y; x++)
+			{
+				System.out.print(" ");
+			}
+			y++;
+			for(int j = 1; j < z; j++)
+			{
+				System.out.print("* ");
+			}
+			z--;
+			
+			System.out.println();
+		}
+		
+	}
+}
+

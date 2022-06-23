@@ -1,0 +1,24 @@
+package naloge12_5;
+
+import java.util.Scanner;
+
+//Napiši program, ki prebere 16 števil in izpiše najveèje in najmanjše število. Na
+//intervalu med drugim in šestim prebranim številom sešteje liha število in
+//izpiše rezultat. Pri tem vzame za spodnjo mejo manjše izmed teh dveh števil, za zgornjo pa veèje.
+public class Vaja3 {
+
+	public static void main(String[] args) {
+		try(Scanner vhod = new Scanner(System.in)){
+			
+			for(int i = 1; i <= 16; i++) {
+				
+				System.out.print("Vnesi "+i+". število: ");
+				int y = vhod.nextInt();
+				
+				if(y % x == 0 && y % 2 == 0) {
+					System.out.println("Število "+y+" je deljivo z 2 in z "+x);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,83 @@
+body {
+	background-image: url(../images/novice.jpg);
+}
+
+h1 {
+	font-family: Comic Sans MS;
+	color: red;
+}
+
+img {
+	float: left;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+span {
+	
+}
+
+.slikce {
+	font-size: 11px;
+	font-family: Verdana;
+	padding: 3px;
+	position: absolute;
+	bottom: 0px;
+}
+
+.space {
+	clear: both;
+}
+
+.siv {
+	background-color: lightgrey;
+	border-bottom: 2px solid grey;
+	width: 190px;
+	text-align: center;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 11px;
+	padding: 3px;
+}
+
+.levoz {
+	width: 190px;
+	height: 92px;
+	border: 1px solid black;
+	float: left;
+	margin: 0px 2.5px 5px 0px;
+	position: relative;
+	background-color: white;
+}
+
+.desnoz {
+	width: 190px;
+	height: 92px;
+	border: 1px solid black;
+	float: left;
+	margin: 0px 0px 5px 2.5px;
+	position: relative;
+	background-color: white;
+}
+
+.levos {
+	width: 190px;
+	height: 92px;
+	border: 1px solid black;
+	float: left;
+	margin: 5px 2.5px 0px 0px;
+	position: relative;
+	background-color: white;
+}
+
+.desnos {
+	width: 190px;
+	height: 92px;
+	border: 1px solid black;
+	float: left;
+	margin: 5px 0px 0px 2.5px;
+	position: relative;
+	background-color: white;
+}

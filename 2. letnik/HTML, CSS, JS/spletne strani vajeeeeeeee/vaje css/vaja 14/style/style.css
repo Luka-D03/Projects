@@ -1,0 +1,77 @@
+
+body {
+	background-color: black;
+}
+
+h1 {
+	font-family: 'Acme', sans-serif;
+}
+
+h2 {
+	font-family: 'BenchNine', sans-serif;
+}
+
+.glavni {
+	width: 100%;
+}
+
+.prva {
+	width: 20%;
+	float: right;
+	text-align: center;
+	margin: 25px;
+	color: lightgrey;
+}
+
+.druga {
+	width: 20%;
+	float: right;
+	text-align: center;
+	margin: 25px;
+	background-color: lightgrey;
+	border: 5px solid red;
+}
+
+.tretja {
+	width: 20%;
+	float: right;
+	text-align: center;
+	margin: 25px;
+	background-color: lightgrey;
+	border: 5px solid red;
+}
+
+.cetrta {
+	width: 20%;
+	float: right;
+	text-align: center;
+	margin: 25px;
+	background-color: lightgrey;
+	border: 5px solid red;
+}
+
+.muca {
+	width: 70%;
+	height: 800px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	
+}
+
+#muca1 {
+	background-image: url(../images/muca1.jpg);
+}
+
+#muca2 {
+	background-image: url(../images/muca2.jpg);
+}
+
+#muca3 {
+	background-image: url(../images/muca3.jpg);
+}
+
+#muca4 {
+	background-image: url(../images/muca4.jpg);
+}

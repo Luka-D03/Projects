@@ -1,0 +1,138 @@
+Vaja 1:
+import java.util.Scanner;
+
+public class vaja1 {
+//Napiši program, ki izpiše števila in vsoto števil na intervalu med X in 53. 
+	
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner (System.in);
+		
+		System.out.print("Vnesi število manjše od 53: ");
+		int x = vhod.nextInt();
+		int vsota = 0;
+		System.out.println();
+		for(x = x + 1; x < 53; x++)
+		{
+			System.out.println("Stevilo na intervalu je : "+x);
+			vsota = vsota + x;
+		}
+		
+		System.out.print("Vsota števil je: "+vsota);
+		
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------------------
+Vaja 2:
+public class vaja2 {
+//Napiši program, ki izpiše števila deljiva s 3 in hkrati s 5 in vsoto števil na intervalu med 3 in 53.
+	
+	public static void main(String[] args) {
+		
+		int vsota = 0;
+		
+		for(int i = 4; i<53; i++)
+		{
+			if(i % 3 == 0 & i % 5 == 0)
+			{
+				System.out.println("Števila deljiva s 3 in hkrati s 5 so: "+i);
+			}
+			vsota = vsota + i;
+		}
+		
+		System.out.print("Vsota števil je: "+vsota);
+		
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------------------
+Vaja 3:
+import java.util.Scanner;
+
+public class vaja3 {
+//Napiši program, ki prebere 12 števil, izpiše največje in najmanjše število in vsoto zadnjih petih prebranih števil.
+	
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner (System.in);
+		
+		int max = 0;
+		int min = 999999999;
+		int vsota = 0;
+		
+		for(int i = 1; i <= 12; i++)
+		{
+			System.out.print("Vnesi "+i+". število: ");
+			int x = vhod.nextInt();
+			
+			if(x > max)
+			{
+				max = x;
+			}
+			
+			if(x < min)
+			{
+				min = x;
+			}
+			if(i > 7)
+			{
+				vsota = vsota+x;
+			}
+		}
+		
+		System.out.println("Vsota števil je: "+vsota);
+		System.out.println("Največje število je: "+max);
+		System.out.println("Najmanjše število je: "+min);
+		
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------------------
+Vaja 4:
+import java.util.Scanner;
+
+public class vaja4 {
+//Napiši program, ki izpiše vsako tretje število na intervalu med X in Y oziroma Y in X (glede na to katero izmed števil je večje!).
+	
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner (System.in);
+		
+		System.out.print("Vnesi 1. število: ");
+		int x = vhod.nextInt();
+		
+		System.out.print("Vnesi 2. število: ");
+		int y = vhod.nextInt();
+		
+		int h = 2;
+		
+		System.out.print("Vsako tretje število na intervalu je: ");
+		
+		if(x>y)
+		{
+			for(y = y + 1; y<x; y++)
+			{
+				h++;
+				if(h == 3)
+				{
+					System.out.println();
+					System.out.println(y);
+					h = 0;
+				}
+			}
+		}
+		
+		if(y>x)
+		{
+			for(x = x + 1; x<y; x++)
+			{
+				h++;
+				if(h == 3)
+				{
+					System.out.println();
+					System.out.println(x);
+					h = 0;
+				}
+			}
+		}
+	}
+
+}

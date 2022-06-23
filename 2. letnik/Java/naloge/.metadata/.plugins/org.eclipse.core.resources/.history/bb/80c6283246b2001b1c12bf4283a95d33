@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class naloga3 {
+//Napiši program, ki prebere 10 števil in izpiše najveèje in najmanjše število. 
+//Na intervalu med drugim najveèjim vnesenim številom in najveèjim vnesenim številom sešteje vsako drugo število 
+//in izpiše rezultat.
+
+	public static void main(String[] args) {
+		try(Scanner vhod = new Scanner(System.in)){
+		//incializacija števil
+			int max = -999999999, min = 999999999, max2 = -999999999, vsota = 0;
+			
+			for(int i = 1; i <= 10; i++) {	//interval za branje 10. števil
+				System.out.print("Vnesi "+i+". število: ");//branje števil
+				int x = vhod.nextInt();//branje števil
+				
+				if (x >= max) {//preverjanje max in max 2
+		            max2 = max;
+		            max = x;
+				}
+				
+				if (x < min) {//preverjanje minimuma
+		            min = x;
+				}
+			}
+			
+			System.out.println("Najveèje število je: "+max);//izpis najveèjega števila
+			System.out.println("Najmanjše število je: "+min);//izpis najmanjšega števila
+			System.out.println("Drugo najveèje število je: "+max2);//izpis drugega najveèjega števila
+			
+			for(max2 += 1; max2 < max; max2 = max2 + 2) {//	interval med drugim najveèjim vnesenim številom in najveèjim vnesenim številom sešteje vsako drugo število
+				vsota += max2;
+			}
+			
+			System.out.println("Vsota števil je: "+vsota);//izpis rezultata.
+		}
+	}
+}

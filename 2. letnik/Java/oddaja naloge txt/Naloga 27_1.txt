@@ -1,0 +1,201 @@
+naloga 1:
+package naloge27_1;
+
+import java.util.Scanner;
+
+public class vaja_1 {
+//Napiši program, ki prebere tri števila in izpiše števila od najvecjega do najmanjšega.
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner(System.in);
+		
+		System.out.print("Vnesi prvo število: ");
+		int x = vhod.nextInt();
+		System.out.print("Vnesi drugo število: ");
+		int y = vhod.nextInt();
+		System.out.print("Vnesi tretje število: ");
+		int z = vhod.nextInt();
+		
+		if(x>y)
+		{
+			if(x>z)
+			{
+				System.out.println(x);
+				if(y>z)
+				{
+					System.out.println(y);
+					System.out.println(z);
+				}
+				else
+				{
+					System.out.println(z);
+					System.out.println(y);
+				}
+			}
+		}
+		
+		if(y>x)
+		{
+			if(y>z)
+			{
+				System.out.println(y);
+				if(x>z)
+				{
+					System.out.println(x);
+					System.out.println(z);
+				}
+				else
+				{
+					System.out.println(z);
+					System.out.println(x);
+				}
+			}
+		}
+		
+		if(z>y)
+		{
+			if(z>x)
+			{
+				System.out.println(z);
+				if(y>x)
+				{
+					System.out.println(y);
+					System.out.println(x);
+				}
+				else
+				{
+					System.out.println(x);
+					System.out.println(y);
+				}
+			}
+		}
+	}
+}
+___________________________________________________________________________________________________________________________________________________________
+naloga 2:
+package naloge27_1;
+
+import java.util.Scanner;
+
+public class vaja_2 {
+//Napiši program, ki izpiše števila na intervalu med X in 23.
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner(System.in);
+		
+		System.out.print("Vnesi poljubno število: ");
+		int x = vhod.nextInt();
+		
+		x++;
+		System.out.println("Števila med vnesenim številom in številom 23:");
+		for(x = x;x<23;x++)
+		{
+			System.out.println(x);
+		}			
+	}
+}
+___________________________________________________________________________________________________________________________________________________________
+naloga 3:
+package naloge27_1;
+
+import java.util.Scanner;
+//Napiši program, ki izpiše vsoto vsakega X števila na intervalu med 3 in Y.
+public class vaja_3 {
+
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner(System.in);
+		
+		System.out.print("Vnesi število, ki se uporabi za seštevek vsakega tistega števila: ");
+		int x = vhod.nextInt();
+		System.out.print("Vnesi število za konec intervala: ");
+		int y = vhod.nextInt();;
+		int v = 0;
+		int h = x-1;
+		
+		for(int i=4; i<y; i++)
+		{
+			h++;
+			if(h==x)
+			{
+				v=v+i;
+				h=0;
+			}
+		}
+		System.out.print("Vsota vsakega "+x+" števila je: "+v);
+	}
+}
+___________________________________________________________________________________________________________________________________________________________
+naloga 4:
+package naloge27_1;
+
+import java.util.Scanner;
+//Napiši program, ki prebere dve števili. Ti dve števili vzame za meji intervala. Vsako drugo število na intervalu sešteje in izpiše rezultat. 
+//Nalogo reši enkrat s for in drugic z while zanko.
+public class vaja_4 {
+
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner(System.in);
+		//for zanka
+		System.out.println("Uporaba zanke while:");
+		System.out.println();
+		System.out.print("Vnesi število, ki se uporabi za zacetek intervala: ");
+		int z = vhod.nextInt();
+		System.out.print("Vnesi število, ki se uporabi za konec intervala: ");
+		int y = vhod.nextInt();;
+		int v = 0;
+		
+		int x = z;
+		x++;
+		for(x = x; x<y; x++)
+		{
+			v = v+x;
+		}
+		System.out.print("Seštevek števil med "+z+ " in "+y+" je: "+v);
+		System.out.println();
+		System.out.println();
+		//while zanka
+		System.out.println("Uporaba zanke while:");
+		System.out.println();
+		System.out.print("Vnesi število, ki se uporabi za zacetek intervala: ");
+		int q = vhod.nextInt();
+		System.out.print("Vnesi število, ki se uporabi za konec intervala: ");
+		int w = vhod.nextInt();;
+		int e = 0;
+		
+		int r = q;
+		r++;
+		while(r<w)
+		{
+			e = e+r;
+			r++;
+		}
+		System.out.print("Seštevek števil med "+q+ " in "+w+" je: "+e);
+	
+	}
+}
+___________________________________________________________________________________________________________________________________________________________
+naloga 5:
+package naloge27_1;
+
+import java.util.Scanner;
+//Napiši program, ki izpiše srednjo vrednost X prebranih števil.
+public class vaja_5 {
+
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner(System.in);
+		
+		System.out.println("Koliko število boste vnesili?");
+		int z = vhod.nextInt();
+		int y = 1;
+		int v = 0;
+		
+		for(int i = 1; i<=z;i++)
+		{
+			System.out.print("vnesite "+y+". število: ");
+			int x = vhod.nextInt();
+			y++;
+			v = v+x;
+		}
+		
+		v = v/z;
+		System.out.print("Povprecje vnesenih števil je: "+v);
+	}
+}

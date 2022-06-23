@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class vaja2 {
+//Napiši program, ki prebere dvajset števil. 
+//Pri tem izpiše števila deljiva z X izmed prvih desetih prebranih števil in števila deljiva z Y izmed ostalih pet prebranih števil. 
+//Zadnjih pet prebranih števil sešteje v vsoto in deli z drugim številom deljivim z X izmed prvih desetih prebranih števil.
+	public static void main(String[] args) {
+		try(Scanner vhod = new Scanner(System.in)){
+			
+			System.out.print("Vnesi x: ");
+			int x = vhod.nextInt();
+			
+			System.out.print("Vnesi y: ");
+			int y = vhod.nextInt();
+			
+			for(int i = 1; i <= 12; i++)
+			{
+				System.out.print("Vnesi "+i+". število: ");
+				int z = vhod.nextInt();
+				if(i <= 10)
+				{
+					
+				}
+			}
+			
+			
+		}
+
+	}
+
+}

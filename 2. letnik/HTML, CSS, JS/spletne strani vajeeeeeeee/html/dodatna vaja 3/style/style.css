@@ -1,0 +1,83 @@
+
+body {
+	background-color: #280063;
+}
+
+table, tr, td{
+	/*border:1px solid black;*/
+	width: 1000px;
+	margin: auto;
+}
+
+.stvari1 {
+	background-color: #38008a;
+	width: 250px;
+	text-align: center;
+	margin-left: 125px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.stvari2 {
+	width: 250px;
+	text-align: center;
+	margin-left: 125px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.uno {
+	margin-left: 85px;
+}
+
+.dos {
+	margin-left: 102px;
+}
+
+
+.tres {
+	margin-left: 63.7px;
+}
+
+
+.labl {
+	display: inline-block;
+	text-align: left;
+}
+
+.naslov1 {
+	display: inline-block;
+}
+
+.naslov2 {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.sredina1 {
+	text-align: center;
+}
+
+.sredina2 {
+	text-align: center;
+	background-color:#1e008a;
+}
+
+.barva{
+	background-color:#2400a6;
+}
+
+.obroba1 {
+	background-color: blue;
+	font-size: 20px;
+
+}
+
+.obroba2 {
+	background-color: red;
+	font-size: 20px;
+}
+
+.glow {
+	font-size: 20px;
+}

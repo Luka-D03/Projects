@@ -1,0 +1,12 @@
+1. Napiši diagram poteka za program, ki prebere 15 števil in izpiše 
+tista, ki so liha izmed teh petnajstih prebranih števil. Na koncu izpiše vsoto sodih števil.
+
+3. Napiši diagram poteka za program, ki prebere x števil in izpiše tista, ki so deljiva z y.
+
+2. Napiši diagram poteka za program, ki izpiše vsoto vsakega tretjega števila in vsako drugo število med 2 in 39. 
+
+3. Napiši diagram poteka za program, ki prebere 16 števil in izpiše samo liha prebrana števila.
+
+4. Nalogo 2 dopolni tako, da program sešteje soda števila in na koncu izpiše vsoto.
+
+5. Napiši diagram poteka za program, ki izpisuje vsako x število med 4 in 33. X preberemo na zaèetku in zaènemo s številom 5!

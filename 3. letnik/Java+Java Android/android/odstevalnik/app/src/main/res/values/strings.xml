@@ -1,0 +1,5 @@
+<resources>
+<string name="app_name">Days until Christmas</string>
+<string name="countdown">There are only</string>
+<string name="countdownleft">until Christmas!</string>
+</resources>

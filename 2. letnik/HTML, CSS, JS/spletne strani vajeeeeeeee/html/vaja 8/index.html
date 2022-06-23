@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Igrice</title>
+	<link rel="stylesheet" href="yes.css">
+	<style>
+		table tr td
+		{
+			/*border:3px solid black;*/
+		}
+	/*<meta http-equiv="Page-Enter" content="blendTrans(duration=0)" />
+	<meta http-equiv="Page-Exit" content="blendTrans(duration=0)" />*/
+	</style>
+</head>
+<body class="change">
+	<div class="full-height">
+	<center>
+		<table>
+			<tr style="width: 100%">
+				<td colspan="4"><center><img src="images/game.gif" width="1300px" height="250px"></center></td>
+			</tr>
+			<td colspan="4">
+					<h3>Klikni in spremeni barvo po svoji želji:</h3>
+						<input class="color1" type="color" value="#230057" />
+						<input class="color2" type="hidden" value="#000000" />
+				</td>
+			<tr style="width: 20%">
+				<td rowspan="3" style="font-size: 50px;">
+					<center>		
+						<a href="game1.html" style="color: #000000; text-shadow: 2px 2px 15px white;">1. Igra🎮</a><br>
+						<br>
+						<a href="game2.html" style="color: #000000; text-shadow: 2px 2px 15px white;">2. Igra🎮</a><br>
+						<br>
+						<a href="mailto:franci.nahtigal@gmail.com" style="color: #000000; text-shadow: 2px 2px 15px white;">E-Pošta📧</a>
+						<br>
+					</center>	
+				</td>
+			</tr>
+		
+			<tr style="font-size: 50px;">
+				<td style="width: 26%"><a href="game1.html" style="color: #000000; text-shadow: 2px 2px 15px white;">1. Igra🎮</a></td>
+				<td style="width: 26%"><a href="game2.html" style="color: #000000; text-shadow: 2px 2px 15px white;">2. Igra🎮</a></td>
+				<td style="width: 26%"><a href="mailto:franci.nahtigal@gmail.com" style="color: #000000; text-shadow: 2px 2px 15px white;">E-Pošta📧</a></td>
+			</tr>
+			<tr style="width: 80%">
+				<td colspan="3"><p1>Video igra je elektronska igra, ki vključuje interakcijo z uporabniškim vmesnikom ali vhodno napravo - kot so krmilna palica, krmilnik, tipkovnica ali naprava za zaznavanje gibanja - za ustvarjanje vizualnih povratnih informacij za igralca. Te povratne informacije so prikazane na napravi za prikaz videa, kot so televizor, monitor, zaslon na dotik ali slušalke za navidezno resničnost. Video igre pogosto dopolnjujejo z zvočnimi povratnimi informacijami, ki se prenašajo prek zvočnikov ali slušalk, včasih pa tudi z drugimi vrstami povratnih informacij, vključno s haptično tehnologijo.<br>
+				<br>
+				Video igre so opredeljene glede na njihovo platformo, ki vključuje arkadne igre, konzole in računalniške igre. V zadnjem času se je industrija razširila na mobilne igre s pametnimi telefoni in tabličnimi računalniki, sistemi navidezne in razširjene resničnosti ter igre na srečo v oblaku. Video igre so razvrščene v širok spekter žanrov glede na njihovo vrsto igranja in namen.<br>
+				<br>
+				Prve videoigre so bile preproste razširitve elektronskih iger z video podobnim izhodom iz velikih računalnikov v sobi v petdesetih in šestdesetih letih, medtem ko so se prve videoigre, ki so bile na voljo potrošnikom, pojavile leta 1971 z izdajo arkadne igre Computer Space, naslednje leto Pong in s prvo domačo konzolo Magnavox Odyssey leta 1972. Danes razvoj video iger zahteva številne spretnosti, da se igra predstavi na trgu, vključno z razvijalci, založniki, distributerji, trgovci na drobno, konzolami in drugimi neodvisnimi proizvajalci ter druge vloge.<br>
+				<br>
+				Od leta 2010 se komercialni pomen industrije video iger povečuje. Nastajajoči azijski trgi in zlasti mobilne igre na pametnih telefonih spodbujajo rast industrije. Od leta 2018 so video igre letno ustvarile 134,9 milijarde ameriških dolarjev prodaje po vsem svetu in so bile za radio in kabelsko televizijo tretji največji segment na ameriškem trgu zabave.</p1></td>
+			</tr>
+		</table>
+	</center>
+	<script> 
+		var color1 = document.querySelector(".color1"); 
+		var color2 = document.querySelector(".color2"); 
+		var body = document.querySelector(".change"); 
+	
+		// Changing color for the gradient 
+		function changeGradient() { 
+			body.style.background = 
+				"radial-gradient("
+					+ color1.value + ", "
+					+ color2.value + ")"; 
+
+			css.textContent = body.style.background + ";"; 
+		} 
+		color1.addEventListener("input", changeGradient); 
+	</script>
+	<div id="grad1"></div>
+</div>	
+</body>
+</html>

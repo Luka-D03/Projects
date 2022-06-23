@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dodatna vaja 1</title>
+	<style>
+		table tr td {
+			border: 1px solid black;
+		}
+		h1 {
+			color: red;
+			text-align: center;
+		}
+		table {
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.krepka_pisava {
+			font-weight: bold;
+			text-align: right;
+		}
+		.desna_poravnava {
+			text-align: right;
+		}
+		.slika {
+			width: 50%;
+		}
+		#desno_spodaj {
+			vertical-align: bottom;
+		}
+		#barva {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+		<h1>Tabela ima 80% širino okna brskalnika</h1>
+		<table width="80%">
+			<tr class="krepka_pisava">
+				<td>vrstica/stolpec</td>
+				<td>1. stolpec</td>
+				<td>2. stolpec</td>
+			</tr>
+			<tr>
+				<td class="krepka_pisava">1. vrstica</td>
+				<td class="desna_poravnava">1. vrstica, 1. stolpec</td>
+				<td class="desna_poravnava">1. vrstica, 2. stolpec</td>
+			</tr>
+			<tr>
+				<td class="krepka_pisava" id="desno_spodaj">povezava je v poravnana desno spodaj!<br><a href="https://sl.wikipedia.org/wiki/Formula_1">Formula 1</a></td>
+				<td rowspan="2" colspan="2" class="slika desna_poravnava"><img src="images/formula.jpg"><br><span id="barva">Slika je velika 50% velikosti celice in desno poravnana</span></td>
+			</tr>
+			<tr>
+				<td class="krepka_pisava" id="desno_spodaj">povezava je v poravnana desno spodaj!<br><a href="https://sl.wikipedia.org/wiki/Formula_2">Formula 2</a></td>
+			</tr>
+		</table>
+</body>
+</html>

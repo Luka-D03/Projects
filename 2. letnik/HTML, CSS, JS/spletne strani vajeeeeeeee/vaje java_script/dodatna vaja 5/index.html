@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodatna vaja 5</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/js.js"></script>
+</head>
+<body>
+    <div class="naslov">
+        <h1 onmouseover="sprememba()" onmouseout="nazaj()" id="naslov">Klic funkcije s tremi parametri (min, max in k), ki prikaže člane zaporedja</h1>
+        <h1 id="posebnes"></h1>
+    </div>
+    <div class="obseg">
+        Najnižja vrednost: <input onchange="spremeni()" type="number" id="min" value="3">
+        <br>
+        Najvišja vrednost: <input onchange="spremeni()" type="number" id="max" value="33">
+        <br>
+        Korak zaporedja: <input onchange="spremeni()" type="number" id="korak" value="4">
+        <br>
+
+    </div>
+    <div id="vsebina">
+
+    </div>
+</body>
+</html>

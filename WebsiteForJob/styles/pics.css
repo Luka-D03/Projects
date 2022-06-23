@@ -1,0 +1,41 @@
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.panel {
+    width: 480px;
+    height: 300px;
+}
+
+.pics {
+    margin: 0.5em 0.25em;
+}
+
+.shadow {
+    transition: 0.3s;
+}
+
+.pic {
+    width: 300px;
+    height: 300px;
+    object-fit: scale-down;
+    transition: 0.3s;
+}
+
+.shadow:hover {
+    box-shadow: 0px 0px 20px black;
+    transform: scale(1.1, 1.1);
+    transition: 0.3s;
+}
+
+.pic:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 0px 0px 20px black;
+    transition: 0.3s;
+}

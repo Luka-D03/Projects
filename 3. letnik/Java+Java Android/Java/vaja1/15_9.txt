@@ -1,0 +1,16 @@
+Napiši program, ki izpiše števila med 6 in 53 in vsoto teh števil deljeno s številom teh števil.
+
+
+Napiši program, ki prebere 5 števil in izpiše tista, ki so deljiva hkrati z 2 in s 3.
+
+
+Napiši program, ki prebere dve števili, ki morata biti manjši od 45, 
+njuna razlika pa večja od 9 in prvo število manjše od drugega. V primeru, da to ne drži
+izpiše, da je prišlo do napake. števila na intervalu med prebranima številoma sešteje
+in izpiše vsoto in srednjo vrednost.
+
+Napiši program, ki glede na vneseno število izriše zvezdice. Primer števila 3:
+
+    *
+   *  *
+  *  *  *

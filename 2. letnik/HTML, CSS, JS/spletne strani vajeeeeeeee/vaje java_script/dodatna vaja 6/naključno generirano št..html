@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naključno generirano število</title>
+    <link rel="stylesheet" href="style/naključno št..css">
+    <script src="js/naključno št..js"></script>
+</head>
+<body>
+    <div class="center">
+        <div id="prvo_okno">
+            <input type="number" name="Število" id="stevilo" placeholder="Vnos zgornje meje števil.">
+            <br>
+            <button type="button" onclick="generiraj()">GENERIRAJ NAKLJUČNO  ŠTEVILO</button>
+        </div>
+        <div id="drugo_okno">
+            <input type="number" name="Število" id="vneseno" placeholder="Vnos za preverjanje.">
+            <br>
+            <button type="button" onclick="preverjanje()">PREVERI ALI JE ŠTEVILO PRAVILNO</button>
+        </div>
+        <div id="alert_okno">
+            <h1 id="izpis"></h1>
+            <input type="button" id="poizkusi_ponovno" value="Poizkusi ponovno." onclick="ponovno()">
+            <input type="button" id="ponovno" value="Bi poizkusili ponovno?" onclick="reset()">
+        </div>
+    </div>
+</body>
+</html>

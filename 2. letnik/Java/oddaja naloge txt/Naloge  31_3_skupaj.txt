@@ -1,0 +1,197 @@
+Vaja 1:
+package naloge31_3_skupaj;
+
+import java.util.Scanner;
+//Napiši program, ki izpiše števila in vsoto števil na intervalu med X+5 in Z-3. 
+public class vaja1 {
+
+	public static void main(String[] args) {
+		try (Scanner in = new Scanner(System.in)) {
+			
+			int vsota = 0;
+			
+			System.out.print("Vnesi število: ");
+			int x = in.nextInt();
+			
+			System.out.print("Vnesi število: ");
+			int z = in.nextInt();
+			z = z - 3;
+			for(x = x + 5 + 1; x < z; x++) {
+				System.out.println(x);
+				vsota += x;
+			}
+			
+			System.out.print("Vsota je: "+vsota);
+		}
+
+	}
+
+}
+-------------------------------------------------------------------------------------------------------------------------
+Vaja 2:
+package naloge31_3_skupaj;
+
+import java.util.Scanner;
+//Napiši program, ki izpiše števila deljiva s 3 in hkrati z X in vsoto sodih števil na intervalu med 2 in Z. 
+//V primeru, da prebrano število Z manjše od 34, ga ponovno preberi.
+public class vaja2 {
+
+	public static void main(String[] args) {
+		try (Scanner in = new Scanner(System.in)) {
+			
+			int vsota_sodih = 0;
+			int a = 2;
+			
+			System.out.print("Vnesi število: ");
+			int z = in.nextInt();
+			
+			System.out.print("Vnesi število: ");
+			int x = in.nextInt();
+			
+			for(int i = 1; i < a; i++) {
+				if(z < 34) {
+					System.out.print("Ponovno vnesi število: ");
+					z = in.nextInt();
+					a++;
+				}
+				else {
+					a--;
+				}
+			}
+			
+			System.out.println("Števila ki so deljiva s 3 in hkrati s "+x+" so: ");
+			
+			for(int i = 2 + 1; i < z; i++) {
+				
+				if(i % 2 == 0) {
+					vsota_sodih += i;
+				}
+				
+				if(i % 3 == 0) {
+					if(i % x == 0) {
+						System.out.println(i);
+					}
+				}
+			}
+			
+			System.out.print("Vsota sodih števil je: "+vsota_sodih);
+		}
+
+	}
+
+}
+-------------------------------------------------------------------------------------------------------------------------
+Vaja 3:
+package naloge31_3_skupaj;
+
+import java.util.Scanner;
+//Napiši program, ki prebere 18 števil, izpiše največje in najmanjše število in vsoto od 5 do 10 prebranega števila.
+public class vaja3 {
+
+	public static void main(String[] args) {
+		try (Scanner in = new Scanner(System.in)) {
+			
+			int vsota = 0;
+			int max = -999999999;
+			int min = 999999999;
+			
+			for(int i = 1; i <= 18; i++) {
+				System.out.print("Vnesi "+i+". število: ");
+				int x = in.nextInt();
+				
+				if(x > max) {
+					max = x;
+				}
+				
+				if(x < min) {
+					min = x;
+				}
+				
+				if(i >= 5 && i <= 10) {
+					vsota += x;
+				}
+			}
+			
+			System.out.println("Največje število je: "+max);
+			System.out.println("Najmanjše število je: "+min);
+			System.out.println("Vsota je: "+vsota);
+		}
+
+	}
+
+}
+-------------------------------------------------------------------------------------------------------------------------
+Vaja 4:
+package naloge31_3_skupaj;
+
+import java.util.Scanner;
+//Napiši program, ki izpiše vsako peto število na intervalu med X in Y oziroma Y in X (glede na to katero izmed števil je večje!). 
+//Razlika med njima mora biti najmanj 32. Če je manjša ju ponovno preberi.
+public class vaja4 {
+
+	public static void main(String[] args) {
+		try (Scanner in = new Scanner(System.in)) {
+			
+			int a = 4;
+			int z = 0;
+			int d = 2;
+			
+			System.out.print("Vnesi prvo število: ");
+			int x = in.nextInt();
+			
+			System.out.print("Vnesi drugo število: ");
+			int y = in.nextInt();
+			
+			if(x > y) {
+				z = x - y;
+			}
+			else {
+				z = y - x;
+			}
+			
+			for(int i = 1; i < d; i++) {
+				
+				if(z < 32) {
+					System.out.print("Ponovno vnesi prvo število: ");
+					x = in.nextInt();
+				
+					System.out.print("Ponovno vnesi drugo število: ");
+					y = in.nextInt();
+					
+					d++;
+				}
+				else {
+					d--;
+				}
+				if(x > y) {
+					z = x - y;
+				}
+				else {
+					z = y - x;
+				}
+			}
+			
+			System.out.println("Vsako 5. število na intervalu je: ");
+			
+			if(x < y) {
+				for(x = x + 1; x <= y; x++) {
+					a++;
+					if(a == 5) {
+						System.out.println(x);
+						a = 0;
+					}
+				}
+			}
+
+			if(y < x) {
+				for(y = y + 1; y <= x; y++) {
+					a++;
+					if(a == 5) {
+						System.out.println(y);
+						a = 0;
+					}
+				}
+			}
+		}
+	}
+}

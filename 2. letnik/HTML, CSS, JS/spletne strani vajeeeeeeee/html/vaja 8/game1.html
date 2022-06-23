@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Red Dead Redemption 2</title>
+	<link rel="stylesheet" href="yes.css">
+	<style>
+		table tr td
+		{
+			/*border:3px solid black;*/
+		}
+	</style>
+</head>
+<body class="change">
+	<div class="full-height">
+	<center>
+		<table>
+			<tr style="width: 100%">
+				<td colspan="4"><center><img src="images/rdr2.png" width="1300px" height="250px"></center></td>
+			</tr>
+			<td colspan="4">
+					<h3>Klikni in spremeni barvo po svoji želji:</h3>
+						<input class="color1" type="color" value="#4c3c7d" />
+						<input class="color2" type="hidden" value="#000000" />
+				</td>
+			<tr style="width: 20%">
+				<td rowspan="3" style="font-size: 50px;">
+					<center>		
+						<a href="index.html" style="color: #000000; text-shadow: 2px 2px 15px white;">Domov🏠</a><br>
+						<br>
+						<a href="game2.html" style="color: #000000; text-shadow: 2px 2px 15px white;">2. Igra🎮</a><br>
+						<br>
+						<a href="mailto:franci.nahtigal@gmail.com" style="color: #000000; text-shadow: 2px 2px 15px white;">E-Pošta📧</a>
+						<br>
+					</center>	
+				</td>
+			</tr>
+		
+			<tr style="font-size: 50px;">
+				<td style="width: 26%"><a href="index.html" style="color: #000000; text-shadow: 2px 2px 15px white;">Domov🏠</a></td>
+				<td style="width: 26%"><a href="game2.html" style="color: #000000; text-shadow: 2px 2px 15px white;">2. Igra🎮</a></td>
+				<td style="width: 26%"><a href="mailto:franci.nahtigal@gmail.com" style="color: #000000; text-shadow: 2px 2px 15px white;">E-Pošta📧</a></td>
+			</tr>
+			<tr style="width: 80%;">
+				<td colspan="3"><p1>Red Dead Redemption 2 (stilizirana kot Red Dead Redemption II) je akcijsko-pustolovska igra 2018, ki jo je razvil in objavil Rockstar Games. Igra je tretji vstop v serijo Red Dead in je predzgodba igre Red Dead Redemption iz leta 2010. Zgodba je postavljena leta 1899 v izmišljeni predstavitvi zahodnih, srednjezahodnih in južnih držav ZDA in sledi izobčencu Arthurju Morganu, članu tolpe Van der Linde. Arthur se mora spoprijeti z zatonom Divjega zahoda, medtem ko poskuša preživeti proti vladnim silam, tekmujočim tolpam in drugim nasprotnikom. Zgodba spremlja tudi kolega iz tolpe Johna Marstona, protagonista Red Dead Redemption.<br>
+				<br>
+				Igra je predstavljena tako z vidika prve kot tretje osebe, igralec pa se lahko prosto sprehaja po svojem interaktivnem odprtem svetu. Elementi igranja vključujejo streljanje, kraje, lov, jahanje, interakcijo z liki, ki niso igralci, in ohranjanje častne ocene lika z moralnimi odločitvami in dejanji. Sistem odobravanja, podoben sistemu "iskanih" iz franšize Grand Theft Auto, ureja odziv organov pregona in lovcev na glave na zločine, ki jih je zagrešil igralec.<br>
+				<br>
+				Razvoj igre se je začel kmalu po izidu Red Dead Redemption, delili pa so ga vsi Rockstarjevi studii po vsem svetu. Razvojna skupina je vplivala na resnične lokacije, v nasprotju s filmom ali umetnostjo, osredotočena na ustvarjanje natančnega odseva časa z liki igre in svetom. Igra je bila Rockstarjeva prva izdelana posebej za konzole osme generacije, saj je med prenosom Grand Theft Auto V na platforme preizkusila njihove tehnične zmogljivosti. Zvočni posnetek igre vsebuje izvirno partituro Woodyja Jacksona in nekaj vokalnih skladb, ki jih je produciral Daniel Lanois. Red Dead Redemption 2 je bil izdan za PlayStation 4 in Xbox One oktobra 2018, za Microsoft Windows in Stadia pa novembra 2019. Red Dead Online, spletni način za več igralcev, je bil izdan kot beta različica novembra 2018 pred popolna izdaja maja 2019.<br>
+				<br>
+				Red Dead Redemption 2, ki je bil pred izidom težko pričakovan in tržen, je podrl več rekordov in dosegel drugo največjo predstavitev v zgodovini zabave, saj je od prvega vikenda ustvaril 725 milijonov USD prodaje in v dveh tednih presegel celotno prodajo Red Dead Redemption. Prejel je hvalo kritike s pohvalami, usmerjenimi na zgodbo, like, odprti svet, grafiko in precejšnjo podrobnost; manjša kritika je bila usmerjena na nadzorno shemo in poudarek na realizmu nad svobodo igralca. Kot primer video iger kot umetniške oblike je ob koncu leta prejel priznanja, vključno z nagradami za igro leta iz več igralniških publikacij. Je med najbolje prodajanimi video igrami z več kot 34 milijoni odposlanih izvodov.</p1></td>
+			</tr>
+			
+			<tr>
+				<td colspan="4" class="glow2" style="font-size: 50px; width: 100%"><a href="index.html" style="color: #000000; text-shadow: 2px 2px 15px white;"><center>👉🏼Nazaj👈🏼</center></a></td>
+			</tr>
+		</table>
+	</center>
+		<script> 
+		var color1 = document.querySelector(".color1"); 
+		var color2 = document.querySelector(".color2"); 
+		var body = document.querySelector(".change"); 
+	
+		// Changing color for the gradient 
+		function changeGradient() { 
+			body.style.background = 
+				"radial-gradient("
+					+ color1.value + ", "
+					+ color2.value + ")"; 
+
+			css.textContent = body.style.background + ";"; 
+		} 
+		color1.addEventListener("input", changeGradient); 
+	</script>
+	<div id="grad1"></div>
+</div>
+</body>
+</html>

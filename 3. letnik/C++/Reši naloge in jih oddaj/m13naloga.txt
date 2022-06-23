@@ -1,0 +1,63 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    char znak;
+    string niz;
+    int v = 0;
+
+    cout<<"Napisite stavek: \n";
+    getline(cin, niz);
+    cout<<"Crka za stetje: \n";
+    cin>>znak;
+    for(int i  = 0; i < niz.size(); i++)
+        if(niz[i] == znak)
+            v++;
+
+    cout<<"Crka "<<znak<<" se pojavi "<<v<<" krat."<<endl;
+
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main() {
+    int i, v = 0;
+
+    while(v < 600) {
+        cout<<"Vnesite stevilo: "<<endl;
+        cin>>i;
+
+        if(i % 2 == 0)
+            v += i;
+    }
+
+    cout<<"Vsota stevil je: "<<v<<endl;
+}
+------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main() {
+    const int N = 100;
+    int v = 0, min;
+    int tabela[N];
+    float pov;
+
+    for(int i = 0; i < N; i++) {
+        cout<<"Vnesite stevilo: \n";
+        cin>>tabela[i];
+        v += tabela[i];
+    }
+    pov = (float)v / N;
+
+    min = tabela[0];
+    for(int i = 1; i < N; i++)
+        if(tabela[i] < min)
+            min = tabela[i];
+
+    cout<<"Povprecje je: "<<pov<<endl;
+    cout<<"Vsota je: "<<v<<endl;
+    cout<<"Najmanjse stevilo je: "<<min<<endl;
+
+    return 0;
+}

@@ -1,0 +1,68 @@
+body {
+	background-color: grey;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	float: left;
+	padding: 33.5px 33px;
+}
+
+span {
+	font-weight: bold;
+}
+
+.zgornimeni {
+	background-color: red;
+	height: 100px;
+	color: white;
+	font-size: 33px;
+}
+
+.glavni {
+	color: white;
+	font-weight: bolder;
+	
+}
+
+.desno {
+	float: left;
+	font-size: 50px;
+}
+
+.levo {
+	float: right;
+	margin-top: 60px;
+}
+
+.clear {
+	clear: both;
+}
+
+.blue {
+	background-color: blue;
+	text-align: center;
+	color: white;
+	padding: 33px 0px;
+	border-radius: 17px;
+	margin-top: 10px;
+	margin-left: 60px;
+}
+
+.levi_meni {
+	float: left;
+	width: 20%;
+}
+
+.obvestilo {
+	float: right;
+	background-color: white;
+	width: 77%;
+	padding: 15px;
+	margin-top: 10px;
+	color: blue;
+	border-radius: 17px;
+}

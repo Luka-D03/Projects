@@ -1,0 +1,159 @@
+Vaja_1:
+package naloge20_1;
+	//Napiši program, ki prebere dve števili in izpiše njun produkt.
+import java.util.Scanner;
+
+public class vaja_1 {
+
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner(System.in);
+		
+		System.out.print("Vnesi prvo št.: ");
+		int prvo = vhod.nextInt();
+		System.out.print("Vnesi drugo št.: ");
+		int drugo = vhod.nextInt();
+		
+		prvo = prvo * drugo;
+		
+		System.out.println("Produkt števil je: "+ prvo);
+	}
+
+}
+--------------------------------------------------------------------------------------
+Vaja_2:
+package naloge20_1;
+	//Napiši program, ki izpiše vsoto vsakega petega števila na intervalu med 1 in 56.
+public class vaja_2 {
+
+	public static void main(String[] args) {
+		int v=0;
+		int x=4;
+		
+		for(int i=2; i<56; i++)
+		{
+			x++;
+			if(x==5)
+			{
+				v=v+i;
+				x=0;
+			}
+		}
+		System.out.println("Vsota vsakega petega števila je: "+v);
+	}
+}
+--------------------------------------------------------------------------------------
+Vaja_3:
+package naloge20_1;
+
+import java.util.Scanner;
+
+//Napiši program, ki izpiše vsoto vsakega petega števila na intervalu med X in Y.
+public class vaja_3 {
+
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner(System.in);
+		
+		System.out.print("Vnesi prvo št.: ");
+		int i = vhod.nextInt();
+		System.out.print("Vnesi drugo št.: ");
+		int y = vhod.nextInt();
+		
+		int x = 4;
+		int v = 0;
+		
+		for(i++; i<y; i++)
+		{
+			x++;
+			if(x==5)
+			{
+				v=v+i;
+				x=0;
+			}
+		}
+		System.out.println("Vsota vsakega petega števila je: "+v);
+	}
+}
+--------------------------------------------------------------------------------------
+Vaja_4:
+package naloge20_1;
+
+import java.util.Scanner;
+
+//Napiši program, ki prebere dve števili. Ti dve števili vzame za meji intervala. Števila na intervalu sešteje in izpiše rezultat. Nalogo reši enkrat s for in drugič z while zanko.
+public class vaja_4 {
+
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner(System.in);
+		
+		System.out.print("Vnesi število za spodnjo mejo intervala: ");
+		int i = vhod.nextInt();
+		System.out.print("Vnesi število za zgornjo mejo intervala: ");
+		int y = vhod.nextInt();
+		
+		int x =0;
+		int v = 0;
+		x = i;
+		System.out.println();
+		System.out.println("Uporaba zanke for:");
+		System.out.println();
+		for(i++; i<y; i++)
+		{
+			v = v+i;
+		}
+		System.out.println("Vsota vseh števil je: "+v);
+		
+		v = 0;
+		x++;
+		System.out.println();
+		System.out.println("Uporaba zanke while:");
+		System.out.println();
+		while(x<y)
+		{
+			v = v+x;
+			x++;
+		}
+		System.out.println("Vsota vseh števil je: "+v);
+	}
+}
+--------------------------------------------------------------------------------------
+Vaja_5:
+package naloge20_1;
+
+import java.util.Scanner;
+
+//Napiši program, ki izpiše srednjo vrednost petih prebranih števil.
+public class vaja_5 {
+
+	public static void main(String[] args) {
+		
+		Scanner vhod = new Scanner(System.in);
+		
+		int i = 1;
+		int v = 0;
+		System.out.print("Vnesi "+i+". število: ");
+		int x = vhod.nextInt();
+		i++;
+		v = v+x;
+		System.out.print("Vnesi "+i+". število: ");
+		int y = vhod.nextInt();
+		i++;
+		v = v+y;
+		System.out.print("Vnesi "+i+". število: ");
+		int z = vhod.nextInt();
+		i++;
+		v = v+z;
+		System.out.print("Vnesi "+i+". število: ");
+		int a = vhod.nextInt();
+		i++;
+		v = v+a;
+		System.out.print("Vnesi "+i+". število: ");
+		int d = vhod.nextInt();
+		v = v+d;
+		
+		v = v/i;
+		System.out.print("Srednja vrednost vnesenih števil je: "+v);
+		
+		
+	}
+}
+--------------------------------------------------------------------------------------

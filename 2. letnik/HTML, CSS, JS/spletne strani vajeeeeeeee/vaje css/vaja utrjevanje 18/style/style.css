@@ -1,0 +1,30 @@
+h1 {
+	text-align: center;
+	font-weight: bold;
+}
+
+.celota {
+	width: 400px;
+	height: 400px;
+	margin: auto;
+	border: 5px solid red;
+}
+
+.kvadratki {
+	width: 100px;
+	height: 100px;
+	float: left;
+	text-align: center;
+}
+
+#siva {
+	background-color: grey;
+	color: white;
+	font-size: 3.5em;
+}
+
+#modra {
+	background-color: blue;
+	color: white;
+	font-size: 3.5em;
+}

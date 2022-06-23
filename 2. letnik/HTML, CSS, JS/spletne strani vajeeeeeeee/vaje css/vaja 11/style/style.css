@@ -1,0 +1,60 @@
+table {
+	border: 1px solid red;
+	margin: auto;
+	width: 400px;
+}
+
+tr, td {
+	border: 1px solid red;
+}
+
+h1 {
+	font-size: 30px;
+	color: green;
+}
+
+.sredina {
+	text-align: center;
+}
+
+.odmik {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+}
+
+.glava {
+	text-align: center;
+	padding: 5px;
+	font-size: 22px;
+	background-color: red;
+	font-weight: bold;
+	color: white;
+}
+
+.naslov {
+	font-size: 30px;
+}
+
+.ostalo {
+	font-size: 18px;
+}
+
+.soda {
+	background-color: #FFBF00;
+}
+
+.liha {
+	background-color: #A9F5A9;
+}
+
+.podpis {
+	margin-left: 150px;
+	padding-top: 10px;
+	border-top: dashed maroon;
+	border-width: thick;
+	color: maroon;
+	font-family: cursive;
+}

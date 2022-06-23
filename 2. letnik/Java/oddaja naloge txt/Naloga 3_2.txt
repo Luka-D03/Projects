@@ -1,0 +1,112 @@
+Naloga 1:
+
+import java.util.Scanner;
+//Napiši program, ki prebere določeno število vnosov (to mu določimo na začetku - vnesi število vnosov). Nato izpiše vnos in zaporedno številko vnosa.
+public class vaja_1 {
+
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner (System.in);
+		
+		System.out.println("Koliko števil boste vnesili?");
+		int y = vhod.nextInt();
+		int a = 1;
+		
+		for(int i = 1; i<=y; i++)
+		{
+			System.out.print("Vnesi "+a+". število: ");
+			int x = vhod.nextInt();
+			System.out.print("Vaše "+a+". je: "+x);
+			System.out.println();
+			a++;
+		}
+
+	}
+
+}
+__________________________________________________________________________________________________________________________________________________________________________
+Naloga 2:
+import java.util.Scanner;
+//Napiši program, ki prebere tri števila in preveri, ali je posamezno število deljivo s 3. Na koncu izpiše tekst: Števila deljiva s tri so: (in izpiše ta števila).
+public class vaja_2 {
+
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner (System.in);
+		
+		System.out.print("Vnesi prvo število: ");
+		int a = vhod.nextInt();
+		System.out.print("Vnesi drugo število: ");
+		int b = vhod.nextInt();
+		System.out.print("Vnesi tretje število: ");
+		int c = vhod.nextInt();
+		
+		int x = a;
+		int y = b;
+		int z = c;
+		
+		if(x % 3 == 0 && y % 3 == 0 && z % 3 == 0)
+		{
+			System.out.print("Vnešena števila, ki so deljiva s 3 so: "+x+", "+y+", "+z+".");
+		}
+		
+		if(x % 3 == 0 && y % 3 == 0 && z % 3 != 0)
+		{
+			System.out.print("Vnešena števila, ki so deljiva s 3 so: "+x+", "+y+".");
+		}
+		
+		if(x % 3 == 0 && y % 3 != 0 && z % 3 == 0)
+		{
+			System.out.print("Vnešena števila, ki so deljiva s 3 so: "+x+", "+z+".");
+		}
+		
+		if(x % 3 != 0 && y % 3 == 0 && z % 3 == 0)
+		{
+			System.out.print("Vnešena števila, ki so deljiva s 3 so: "+y+", "+z+".");
+		}
+		
+		if(x % 3 == 0 && y % 3 != 0 && z % 3 != 0)
+		{
+			System.out.print("Vnešena števila, ki so deljiva s 3 so: "+x+".");
+		}
+		
+		if(x % 3 != 0 && y % 3 != 0 && z % 3 == 0)
+		{
+			System.out.print("Vnešena števila, ki so deljiva s 3 so: "+z+".");
+		}
+		
+		if(x % 3 != 0 && y % 3 == 0 && z % 3 != 0)
+		{
+			System.out.print("Vnešena števila, ki so deljiva s 3 so: "+y+".");
+		}
+		
+		if(x % 3 != 0 && y % 3 != 0 && z % 3 != 0)
+		{
+			System.out.print("Nobeno vneseno število ni deljivo s 3.");
+		}
+
+	}
+
+}
+__________________________________________________________________________________________________________________________________________________________________________
+Naloga 3:
+import java.util.Scanner;
+//Napiši program, ki izpiše vsoto števil deljivih s 5 na intervalu med 2 in Y.
+public class vaja_3 {
+
+	public static void main(String[] args) {
+		Scanner vhod = new Scanner (System.in);
+		
+		System.out.println("Vnesi število večje od 3: ");
+		int y = vhod.nextInt();
+		int v = 0;
+		
+		for(int i = 3; i<=y; i++)
+		{
+			if(5 % i == 0)
+			{
+				v = v + i;
+			}
+		}
+		System.out.print("Vsota števil deljivih s 5 je: "+v);
+	}
+
+}

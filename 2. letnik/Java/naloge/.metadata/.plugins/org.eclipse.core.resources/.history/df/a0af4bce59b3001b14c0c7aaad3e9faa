@@ -1,0 +1,81 @@
+package naloge12_5;
+
+import java.util.Scanner;
+
+//Napiši program, ki glede na vneseno število izriše zvezdice. Primer števila 4:
+
+//    **
+
+//   ** ***
+
+//  ** ***   ****
+
+// ** ***   ****     *****
+public class Vaja4 {
+
+	public static void main(String[] args) {
+		try(Scanner vhod = new Scanner(System.in)){
+			
+			//inicializacija števil in poljubnega števila
+			/*System.out.print("Vnesi poljubno število: ");//izpis Vnesi poljubno število:
+			int d = vhod.nextInt();//vnos poljubnega števila
+			*/
+			
+			int s = 3;
+			int x = 2;
+			int z = 1;
+			int a = 1;
+			int w = 1;
+			int g = 1;
+			int h = 1;
+		
+			for (int i = 1; i <= 6; i++)//interval, ki glede na vnešeno število se ponovi tolikokrat kolikor je vneseno število
+			{
+				for (x = 6; x > z; x--)//interval, ki izpiše presledke pred vsemi zvezdicami
+				{
+					System.out.print(" ");
+				}
+				if(i == 1) {
+					System.out.print("*");
+				}
+				for(x = w; x <= a; x++) {
+					System.out.print("*");
+					if(x == 1) {
+						System.out.print("1");
+						g = 4;
+						h = g-;
+					}
+					
+					if(x == g) {
+						System.out.print("1");
+						System.out.print(h);
+						System.out.print(g);
+						h++;
+						g += h;
+					}
+					/*
+					if(x == 8) {
+						System.out.print("1");
+						w = 0;	
+					}
+					if(x == 13) {
+						System.out.print("1");
+						w = 0;	
+					}
+					if(x == 19) {
+						System.out.print("1");
+						w = 0;	
+					}*/
+					
+					
+				}
+				z++;
+				a += s;
+				w = 0;
+				s++;
+				
+				System.out.println();//pomik v novo vrstico
+			}
+		}
+	}
+}

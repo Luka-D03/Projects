@@ -1,0 +1,121 @@
+Vaja 1:
+
+public class vaja1 {
+// Napiši program, ki izpiše vsako tretje število med 5 in 67 in vsoto vsakega drugega števila na istem intervalu.
+	public static void main(String[] args) {
+		int vsota = 0, z2 = 1, z3 = 2;
+		
+		for(int i = 6; i < 67; i++, z2++, z3++) {
+			if(z3 == 3) {
+				System.out.println(i);
+				z3 = 0;
+			}
+			
+			if(z2 == 2) {
+				vsota += i;
+				z2 = 0;
+			}
+		}
+		System.out.println("Vsota je: "+vsota);
+	}
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Vaja 2:
+import java.util.Scanner;
+
+public class vaja2 {
+// Napiši program, ki prebere 8 števil in izpiše tista, ki so liha in niso deljiva z 9.
+	public static void main(String[] args) {
+		try(Scanner vhod = new Scanner(System.in)) {
+		
+			for(int i = 1; i <= 8; i++) {
+				System.out.print("Vnesi "+i+". število: ");
+				int x = vhod.nextInt();
+				
+				if(x % 2 == 1 && x % 9 != 0) {
+					System.out.println(x);
+				}
+			}
+		}
+	}
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Vaja 3:
+import java.util.Scanner;
+
+public class vaja3 {
+//Napiši program, ki prebere 12 števil in izpiše največje število. Nato prebere 9 števil in izpiše najmanjše število. 
+//Na intervalu med najmanjšim in največjim številom sešteje števila deljiva s prvim prebranim številom in izpiše rezultat.
+	public static void main(String[] args) {
+		try(Scanner vhod = new Scanner(System.in)) {
+		
+			int d = 0, max = -999999999, min = 999999999, vsota = 0;
+			
+			for(int i = 1, f = 1; i <= 12; i++) {
+				System.out.print("Vnesi "+i+". število: ");
+				int x = vhod.nextInt();
+				if(f == 1) {
+					d = x;
+				}
+				if(x > max) {
+					max = x;
+				}
+			}
+			
+			for(int i = 1; i <= 9; i++) {
+				System.out.print("Vnesi "+i+". število: ");
+				int x = vhod.nextInt();
+				if(x < min) {
+					min = x;
+				}
+			}
+			for(min = min; min < max; min++) {
+				if(min % d == 0) {
+					vsota += min;
+				}
+			}
+			System.out.println("Vsota je: "+vsota);
+		}
+	}
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Vaja 4:
+import java.util.Scanner;
+
+public class vaja4 {
+//Napiši program, ki glede na vneseno število izriše zvezdice. Primer števila 5:
+//* * * * *
+
+//   *  *  *  *
+
+//      *   *   *
+
+//         *    *
+
+//            *
+	public static void main(String[] args) {
+		try (Scanner vhod = new Scanner(System.in)) {
+			
+			System.out.print("Vnesi poljubno število: ");
+			int y = vhod.nextInt();
+			int n = y-1;
+			int z = 0, b = 1;
+			for (int i=1; i<=y; i++) {
+				for(int d = 0; d < z; d++) {
+					System.out.print(" ");
+				}
+				for(int x = n; x >= 0; x--) {
+					System.out.print("*");
+					for(int d = 0; d < b; d++) {
+						System.out.print(" ");
+					}
+				}
+				
+				System.out.println();
+				z = z + 2;
+				n--;
+				b++;
+			}
+		}
+	}
+}

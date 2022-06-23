@@ -1,0 +1,15 @@
+.gumb {
+	width: 200px;
+	height: 80px;
+	border-radius: 20px;
+	background-color: blue;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.gumb:hover {
+	background-color: white;
+	color: blue;
+	border: 1px solid blue;
+}

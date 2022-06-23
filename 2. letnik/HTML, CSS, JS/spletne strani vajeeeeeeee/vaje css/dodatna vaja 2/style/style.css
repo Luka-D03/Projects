@@ -1,0 +1,31 @@
+h1 {
+	text-align: center;
+}
+
+img {
+	border: 3px solid red;
+}
+
+.slike {
+	text-align: center;
+}
+
+.pravo {
+	background-image: url("../images/srcko.png");
+}
+
+.naslov {
+	font-size: 28px;
+	font-weight: bold;
+	color: red;
+	background-color: yellow;
+	text-align: center;
+	padding: 33px;
+	margin-bottom: 33px;
+}
+
+.podnaslov {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 66px;
+}

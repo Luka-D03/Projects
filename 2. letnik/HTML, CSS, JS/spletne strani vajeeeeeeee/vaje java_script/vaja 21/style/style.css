@@ -1,0 +1,194 @@
+body {
+    background: #2A466B;
+}
+
+h1, #izpis, #izpis2 {
+    color: #F7C631;
+}
+/* rumena barva:
+#AB8922
+#6B5615
+#EBBB30
+#F7C631
+#D1A72A
+
+modra barva:
+#4370AB
+#2A466B
+#5B9AEB
+#60A2F7
+#5289D1 */
+.🤯 {
+    overflow: auto;
+    color: floralwhite;
+}
+
+.zaporedejInput {
+    display: flex;
+    justify-content: center;
+}
+
+.✔ {
+    float: left;
+    font-size: 1.9em;
+    color: red;
+    font-weight: bold;
+}
+
+.✔1 {
+    float: left;
+    font-size: 1.9em;
+    color: red;
+    font-weight: bold;
+}
+
+.✔2 {
+    float: left;
+    font-size: 1.9em;
+    color: red;
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+.❌ {
+    float: left;
+    font-size: 1.9em;
+    color: white;
+}
+
+.❌1 {
+    float: left;
+    font-size: 1.9em;
+    color: white;
+}
+
+.❌2 {
+    float: left;
+    font-size: 1.9em;
+    color: white;
+    padding-left: 1em;
+}
+
+.▫ {
+    float: left;
+    font-size: 1.9em;
+    color: white;
+}
+
+.del {
+    color: red;
+    font-size: 1.6em;
+}
+
+.tab {
+    color: red;
+    font-size: 1.6em;
+}
+
+.vnos {
+    width: 250px;
+    font-size: 1.0em;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.vnos2 {
+    width: 250px;
+    font-size: 1.0em;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.mar {
+    margin-left: 9em;
+} 
+
+.posebnez {
+    background-color: #F7C631;
+    color: red;
+}
+
+::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+.posebnez::placeholder {
+    color: red;
+    font-weight: bold;
+}
+
+
+.💤 {
+    border: 0.3em solid black;
+    height: 35em;
+    border-radius: 2em;
+    overflow: auto;
+}
+
+.🎉 {
+    border: 0.3em solid black;
+    height: 35em;
+    border-radius: 2em;
+    overflow: auto;
+    margin-top: 3.3em;
+}
+
+.line {
+    border: none;
+    border-bottom: 0.2em solid whitesmoke;
+}
+
+#👁‍🗨 {
+    display: inline-block;
+    padding: 1em;
+    font-weight: bold;
+    color: black;
+    background-color: #5289D1;
+    border: none;
+}
+
+#💢 {
+    display: none;
+    padding: 1em;
+    font-weight: bold;
+    color: black;
+    background-color: #5289D1;
+    border: none;
+}
+
+#👁‍🗨1 {
+    display: inline-block;
+    padding: 1em;
+    font-weight: bold;
+    color: black;
+    background-color: #5289D1;
+    border: none;
+}
+
+#💢1 {
+    display: none;
+    padding: 1em;
+    font-weight: bold;
+    color: black;
+    background-color: #5289D1;
+    border: none;
+}
+
+#butns {
+    text-align: center;
+}
+
+#izpis{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#izpis2{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#🙌 {
+    padding-left: 1em;
+}

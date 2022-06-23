@@ -1,0 +1,62 @@
+body {
+	background: orange;
+	font-family: tahoma;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	float: left;
+	margin-left: 33px;
+	width: 15%;
+	border: 5px solid darkred;
+	text-align: center;
+	border-bottom-right-radius: 100%;
+	border-top-left-radius: 100%;
+	padding: 20px;
+	background: darkgrey;
+}
+
+li:hover {
+	background: white;
+	color: darkred;
+	border-bottom-right-radius: 0%;
+	border-top-left-radius: 0%;
+	border-bottom-left-radius: 100%;
+	border-top-right-radius: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: darkred;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 1cm;
+}
+
+h2 {
+	font-size: 0.8cm;
+}
+
+button {
+	margin-bottom: 10px;
+	font-size: 0.5cm;
+	text-align: center;
+	font-weight: bold;
+}
+
+.izracun {
+	border: 5px solid darkgrey;
+	margin-top: 33px;
+	color: darkred;
+	background: white;
+	padding-left: 10px;
+}
+
+.praznina {
+	clear: both;
+}

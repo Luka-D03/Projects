@@ -1,0 +1,64 @@
+table, tr, td {
+    width: 80%;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.prvavrsta {
+    color: white;
+    text-align: center;
+    background-color: #6f42c1;
+    padding: 15px;
+}
+
+.besedilo {
+    width: 30%;
+    padding: 15px;
+    vertical-align: top;
+}
+
+.slika {
+    width: 70%;
+    padding: 15px;
+}
+
+.naslov {
+    color: #6f42c1;
+}
+
+.besedilo1 {
+    color: #333333;
+}
+
+.napis {
+    color: #6f42c1;
+    text-align: center;
+}
+
+.stolpec1 {
+    width: 33%;
+    text-align: center;
+}
+
+.stolpec2 {
+    width: 33%;
+    text-align: center;
+}
+
+.stolpec3 {
+    width: 33%;
+    text-align: center;
+}
+
+.števila {
+    color: #6f42c1;
+}
+
+.video {
+    width: 100%;
+    margin: 15px;
+}
+
+.gumb {
+    width: 100px;
+}

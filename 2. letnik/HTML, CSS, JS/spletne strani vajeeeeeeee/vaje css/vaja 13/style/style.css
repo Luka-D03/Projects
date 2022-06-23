@@ -1,0 +1,80 @@
+body {
+	background-color: #d8f3db;
+	font-family: tahoma;
+	color: #23762e;
+}
+
+	
+h1 {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0px;
+}
+
+li a {
+	float: left;
+	margin-left: 0px;
+	margin-right: 5px;
+	border: 10px solid #23762e;
+	border-radius: 15px;
+}
+
+li a:hover {
+	border: 10px solid #999;
+	filter: grayscale(100%);
+}
+
+table {
+	border: 10px solid #23762e;
+	margin-top: 128px;
+	width: 100%;
+}
+
+tr {
+	margin: 10px;
+}
+
+td {
+	margin: 10px;
+	border: 1px solid #23762e;
+	text-align: center;
+
+}
+
+.border {
+	border: none;
+}
+
+.desno {
+	text-align: right;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.bold {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.glavni {
+	border-left: 5px dashed red;
+	border-right: 5px dashed red;
+}
+
+.prva {
+	color: white;
+	background-color: #23762e;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+}
+
+.podpis {
+	border: 5px double #23762e;
+	margin-top: 33px;
+	padding: 10px;
+}

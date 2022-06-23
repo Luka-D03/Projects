@@ -1,0 +1,134 @@
+Vaja1:
+
+public class vaja1 {
+//Napiši program, ki izpiše vsoto lihih števil na intervalu med 2 in 35 in števila deljiv s tri med 9 in 18.
+	public static void main(String[] args) {
+		
+		int vsota = 0;
+		
+		System.out.println("števila deljiva s 3 so: ");
+		for(int i = 3; i<35; i++)
+		{
+			if(i % 2 == 1)
+			{
+				vsota += i;
+			}
+			
+			if(i > 9 && i < 18)
+			{
+				if(i % 3 == 0)
+				{
+					System.out.println(i);
+				}
+			}
+		}
+		System.out.println("Vsota je: "+vsota);
+
+	}
+
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Vaja2:
+import java.util.Scanner;
+
+public class vaja2 {
+//Napiši program, ki prebere dvajset števil. 
+//Pri tem izpiše števila deljiva z X izmed prvih desetih prebranih števil in števila deljiva z Y izmed ostalih pet prebranih števil. 
+//Zadnjih pet prebranih števil sešteje v vsoto in deli z drugim številom deljivim z X izmed prvih desetih prebranih števil.
+	public static void main(String[] args) {
+		try(Scanner vhod = new Scanner(System.in)){
+			
+			int vsota = 0;
+			int h = 0;
+			int s = 0;
+			
+			System.out.print("Vnesi x: ");
+			int x = vhod.nextInt();
+			
+			System.out.print("Vnesi y: ");
+			int y = vhod.nextInt();
+			
+			for(int i = 1; i <= 20; i++)
+			{
+				System.out.print("Vnesi "+i+". število: ");
+				int z = vhod.nextInt();
+				
+				if(i <= 10)
+				{
+					if(z % x == 0)
+					{
+						h++;
+						System.out.println("Število "+z+" je deljivo z "+x);
+						if(h == 2)
+						{
+							s = z;
+						}
+					}
+				}
+				
+				if(i > 10 && i <= 15)
+				{
+					if(z % y == 0)
+					{
+						System.out.println("Število "+z+" je deljivo z "+y);
+					}
+				}
+				
+				if(i > 15)
+				{
+					vsota += z;
+				}
+				
+			}
+			vsota = vsota/s;
+			System.out.println("Vsota deljiva z drugim deljivim z "+x+" številom je: "+vsota);
+			
+		}
+
+	}
+
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Vaja3:
+import java.util.Scanner;
+
+public class vaja3 {
+//Napiši program, ki prebere 14 števil, največje prebrano število vzame za spodnjo mejo intervala, 
+//vsoto zadnjih šestih prebranih števil pa za zgornjo mejo intervala. 
+//Nato izpiše povprečno vrednost na tem intervalu.
+	public static void main(String[] args) {
+		try (Scanner vhod = new Scanner(System.in)){
+			
+			int max = -999999999;
+			int zgo_meja = 0;
+			int povp = 0;
+			int vsota = 0;
+			
+			for(int i = 1; i <= 14; i++)
+			{
+				System.out.print("Vnesi "+i+". število: ");
+				int x = vhod.nextInt();
+				
+				if(x > max)
+				{
+					max = x;
+				}
+				
+				if(i > 8)
+				{
+					zgo_meja += x;
+				}
+			}
+			
+			for(max = max + 1; max < zgo_meja; max++)
+			{
+				vsota = vsota + max;
+			}
+			zgo_meja  = zgo_meja - 2;
+			povp = vsota/zgo_meja;
+			System.out.println("Povprečje je: "+povp);
+			
+		}
+	}
+
+}

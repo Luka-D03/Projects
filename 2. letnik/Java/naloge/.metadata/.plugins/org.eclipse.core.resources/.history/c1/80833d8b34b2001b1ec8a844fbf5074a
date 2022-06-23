@@ -1,0 +1,26 @@
+
+public class naloga1 {
+//Napiši program, ki izpiše vsa števila med 9 in 53 in vsoto sodih števil na tem intervalu.
+
+	public static void main(String[] args) {
+		
+		int vsota = 0;//inicializacija vsote
+		
+		for(int i = 10; i < 53; i++) {//interval med 9 in 53
+			
+			System.out.print(i);//izpisava števila
+			
+			if(i < 52) {//izpisava , in .
+				System.out.print(", ");
+			} else {
+				System.out.print(".");
+				System.out.println();
+			}
+			if(i % 2 == 0) {
+				vsota += i;
+			}
+		}
+		System.out.println("Vsota sodih števil je: "+vsota);
+	}
+
+}

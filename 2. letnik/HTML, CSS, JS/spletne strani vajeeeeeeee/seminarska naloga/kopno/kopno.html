@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Kopenske živali</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../js/script.js"></script>
+</head>
+<body onload="sprememba()">
+    <nav class="nav navbar-inverse">
+        <div class="srd">
+            <ul>
+                <li class="float"><a href="../index.html">Domov</a></li>
+                <li class="float" onclick="more_stuff()" id="mor">
+                    <div class="menu-icon"></div>
+                    <div class="menu-icon"></div>
+                    <div class="menu-icon"></div>
+                </li>
+                <li class="float" onclick="more_stuff_hide()" id="mor_hide">
+                    <div class="menu-icon-close">X</div>
+                </li>
+                <br>
+                <div class="drop" id="drop">
+                <br> 
+                <ul>
+            <li>
+                <div class="dropdown">
+                    <button type="button" class="dropdown-button"><a href="#">Kopenske živali</a></button>
+                    <div class="dropdown-items">
+                        <a href="leopard.html">Leopard</a>
+                        <a href="fox.html">Lisica</a>
+                        <a href="zebra.html">Zebra</a>
+                    </div>
+                </div> 
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button type="button" class="dropdown-button"><a href="../voda/voda.html">Vodne živali</a></button>
+                    <div class="dropdown-items">
+                        <a href="../voda/meduza.html">Meduza</a>
+                        <a href="../voda/tjuln.html">Tjuln</a>
+                        <a href="../voda/želva.html">Želva</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button type="button" class="dropdown-button"><a href="../zrak/zrak.html">Ptiči</a></button>
+                    <div class="dropdown-items">
+                        <a href="../zrak/flamingo.html">Flamingo</a>
+                        <a href="../zrak/kolibri.html">Kolibri</a>
+                        <a href="../zrak/raca.html">Raca</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button type="button" class="dropdown-button"><a href="../vrtovi/vrtovi.html">Največji živalski vrtovi</a></button>
+                    <div class="dropdown-items">
+                        <a href="../vrtovi/Henry Doorly Zoo.html">Henry Doorly Zoo</a>
+                        <a href="../vrtovi/Berlin Zoological Garden.html">Berlin Zoological Garden</a>
+                        <a href="../vrtovi/Beijing Zoo.html">Beijing Zoo</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="../izračun.html">Izračun teže</a>
+            </li>
+            <li>
+                <a href="../vid.html">360° video</a>
+            </li>
+        </ul>
+    </div>
+</ul>
+</div>
+    </nav>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-4" id="str1">
+                <h1>Leopard</h1>
+                <img src="images/leopard.jpg" class="slike_strani">
+                <button type="button" class="gumbi_strani"><a href="leopard.html">Izvedi več 😁</a></button>
+            </div>
+            <div class="col-sm-4" id="str2">
+                <h1>Lisica</h1>
+                <img src="images/fox.jpg" class="slike_strani">
+                <button type="button" class="gumbi_strani"><a href="fox.html">Izvedi več 😁</a></button>
+            </div>
+            <div class="col-sm-4" id="str3">
+                <h1>Zebra</h1>
+                <img src="images/zebra.jpg" class="slike_strani">
+                <button type="button" class="gumbi_strani"><a href="zebra.html">Izvedi več 😁</a></button>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid text-center">
+        Spletišče je izdelano kot seminarska naloga pri predmetu NSA (Načrtovanje spletnih aplikacij) 
+        <br>
+        Spletišče izdelal:  Luka Dolenc
+    </footer>
+</body>
+</html>

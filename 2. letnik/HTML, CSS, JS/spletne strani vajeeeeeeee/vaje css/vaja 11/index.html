@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NSA_VAJA11 _Luka_Dolenc</title>
+	<style type="text/css"></style>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+	<h1 class="sredina">Rezultati testa iz MATEMATIKE</h1>
+	<table>
+		<tr class="odmik glava">
+			<td>Naloga</td>
+			<td>Odstotki</td>
+		</tr>
+		<tr class="liha">
+			<td class="odmik">1.naloga</td>
+			<td class="odmik">82%</td>
+		</tr>
+		<tr class="soda">
+			<td class="odmik">2. naloga</td>
+			<td class="odmik">99%</td>
+		</tr>
+		<tr class="liha">
+			<td class="odmik">3. naloga</td>
+			<td class="odmik">55%</td>
+		</tr>
+		<tr class="soda">
+			<td class="odmik">4. naloga</td>
+			<td class="odmik">12%</td>
+		</tr>
+		<tr class="liha">
+			<td class="odmik">5. naloga</td>
+			<td class="odmik">100%</td>
+		</tr>
+		<tr class="soda">
+			<td class="odmik">6. naloga</td>
+			<td class="odmik">20%</td>
+		</tr>
+		<tr class="liha">
+			<td class="odmik">7. naloga</td>
+			<td class="odmik">73%</td>
+		</tr>
+	</table>
+	<br>
+	<div class="podpis">
+		<p>Datum: <span id="date"></span></p>
+		<p>Ocenjevalec: Luka Dolenc</p>
+
+		<script>
+			n =  new Date();
+			y = n.getFullYear();
+			m = n.getMonth() + 1;
+			d = n.getDate();
+			document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+		</script>
+	</div>
+</body>
+</html>

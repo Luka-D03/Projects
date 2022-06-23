@@ -1,0 +1,261 @@
+Vaja1:
+//Napiši program, ki izpiše vsoto števil na intervalu med 2 in 25 in število števil, ki so v vsoti.
+public class vaja1 {
+
+	public static void main(String[] args) {
+		//inicialzizacija
+		int vsota = 0;
+		int vnosi = 0;
+		//for loop
+		for(int i = 3; i < 25;i++/*i = i +1*/) {
+			vsota += i;//vsota = vsota + i-računanje vsote
+			vnosi += 1;//računanje števil
+		}
+		System.out.println("Vsota števil je: "+vsota);
+		System.out.println("Vnos števil je: "+vnosi);
+	}
+
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vaja2:
+//Napiši program, ki izpiše vsoto vsakega petega števila na intervalu med 3 in 59. 
+//Začni z izpisom števila 5.
+public class vaja2 {
+
+	public static void main(String[] args) {
+		//inicialzizacija
+		int vsota = 0;
+		
+		//for loop
+		for(int i = 4; i < 59;i++/*i = i +1*/) {
+			//if loop
+			if(i % 5 == 0) {
+				vsota += i;//računanje vsote vsakega 5. števila
+			}
+		}
+		System.out.println("Vsota števil je: "+vsota);
+	}
+
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vaja3:
+import java.util.Scanner;
+
+//Napiši program, ki prebere 11 števil 
+//in izpiše prva tri prebrana števila 
+//in vsoto zadnjih petih prebranih števil.
+
+public class vaja3 {
+
+	public static void main(String[] args) {
+		//scanner import
+		try (Scanner yeet = new Scanner(System.in)) {
+		
+		//inicialzizacija
+		int vsota = 0;
+		
+		//for loop
+		for(int i = 1; i <= 11;i++/*i = i +1*/) {
+			System.out.print("Vnesi "+i+". število:");
+			int x = yeet.nextInt();
+			
+			if(i < 4) {//izpis prvih treh števil
+				System.out.println(x+" je "+i+". število.");
+			}
+			
+			if(i >= 7) {//računanje vsote pri zadnjih petih številah
+				vsota += x;
+			}
+		}
+		System.out.println("Vsota števil je: "+vsota);//izpis vsote
+		}
+	}
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vaja4:
+import java.util.Scanner;
+
+//Napiši program, ki prebere X števil in izpiše števila, 
+//ki so deljiva s 5 in 3.
+
+
+
+public class vaja4 {
+
+	public static void main(String[] args) {
+		//scanner import
+				try (Scanner yeet = new Scanner(System.in)) {
+				
+					//inicializacija
+					System.out.println("Koliko števil vnesemo?");
+					int x = yeet.nextInt();
+					//for loop
+					for(int i = 1; i <= x; i++) {
+						
+						System.out.print("Vnesi "+i+". število:");
+						int y = yeet.nextInt();
+						
+						//if loop
+						if(y % 5 == 0 && y % 3 == 0) {
+							System.out.println("Število "+y+" je deljivo s 3 in 5");
+						}
+					}
+		}
+	}
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vaja5:
+import java.util.Scanner;
+
+
+//Napiši program, ki prebere tri števila in izpiše največjega 
+//in najmanjšega. 
+//Nato izpiše vsoto števil na intervalu med najmanjšim 
+//in največjim številom.
+
+
+public class vaja5 {
+
+	public static void main(String[] args) {
+		//scanner import
+				try (Scanner vhod = new Scanner(System.in)) {
+				
+					//inicializacija
+					int max = -9999999;
+					int min = 9999999;
+					int vsota = 0;
+					//for loop
+					for(int i = 1; i <= 3; i++) {
+						System.out.print("Vnesi "+i+". število:");
+						int x = vhod.nextInt();
+						//if loop
+						if(max < x) {
+							max = x;
+						}
+						
+						if(min > x) {
+							min = x;
+						}
+					}
+					System.out.println("Najmanjše število je: "+min+" Največje število je: "+max);
+					//another for loop
+					for(min = min + 1; min < max; min++) {
+						vsota += min;
+					}
+					System.out.println("Vsota števil je: "+vsota);
+		}
+	}
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vaja6:
+import java.util.Scanner;
+
+//Napiši program, ki izpiše števila 
+//in vsoto števil deljivih s 5 na intervalu med X in 34. 
+
+
+
+public class vaja6 {
+
+	public static void main(String[] args) {
+		//scanner import
+		try (Scanner vhod = new Scanner(System.in)) {
+			
+			//inicializacija
+			int vsota = 0;
+			System.out.print("Vnesi število: ");
+			int X = vhod.nextInt();
+			//for loop
+			for(int i = X + 1; i < 34; i++) {
+				if(i % 5 == 0) {
+					vsota += i;
+				}
+				System.out.println(i);
+			}
+			System.out.println("Vsota je: "+vsota);
+		}
+	}
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vaja7:
+import java.util.Scanner;
+
+//Napiši program, ki izpiše števila deljiva z X
+//izmed petnajstih prebranih števil. 
+//Pri tem izpiše vsoto tistih izpisanih števil, 
+//ki niso deljiva z Y.
+
+
+
+
+public class vaja7 {
+
+	public static void main(String[] args) {
+		//scanner import
+		try (Scanner vhod = new Scanner(System.in)) {
+			
+			//inicializacija
+			int vsota = 0;
+			System.out.print("Vnesi prvo število: ");
+			int X = vhod.nextInt();
+			System.out.print("Vnesi drugo število: ");
+			int Y = vhod.nextInt();
+			//for loop
+			for(int i = 1; i <= 15; i++) {
+				//vnos števil
+				System.out.print("Vnesi "+i+". število:");
+				int D = vhod.nextInt();
+				//if loop
+				if(D % X == 0) {
+					System.out.println("Število "+D+" je deljivo z "+X);
+				}
+				
+				if(D % Y != 0) {
+					vsota += D;
+				}
+				
+			}
+			System.out.println("Vsota je: "+vsota);
+		}
+	}
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+vaja8:
+import java.util.Scanner;
+
+//Napiši program, ki prebere določeno število vnosov (to mu določimo na začetku - vnesi število vnosov). 
+//Nato izpiše vsoto zaporednih številk vnosov prebranih števil, 
+//ki so deljiva s 5 in vsoto teh števil.
+
+
+
+
+
+public class vaja8 {
+
+	public static void main(String[] args) {
+		//scanner import
+		try (Scanner vhod = new Scanner(System.in)) {
+			
+			//inicializacija
+			int vsota = 0;
+			int vsota1 = 0;
+			System.out.print("Vnesi prvo število: ");
+			int X = vhod.nextInt();
+			//for loop
+			for(int i = 1; i <= X; i++) {
+				System.out.print("Vnesi "+i+". število:");
+				int y = vhod.nextInt();
+				//if loop
+				if(y % 5 == 0) {
+					System.out.println("Število "+y+" je deljivo s 5");
+					vsota += y;
+					vsota1 += i;
+				}
+			}
+			
+			System.out.println("Vsota je: "+vsota);
+			System.out.println("Vsota je: "+vsota1);
+		}
+	}
+}

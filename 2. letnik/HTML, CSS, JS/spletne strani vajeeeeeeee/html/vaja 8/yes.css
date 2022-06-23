@@ -1,0 +1,110 @@
+html, body { 
+	text-align: center; 
+	background: radial-gradient(#230057, #000000);
+
+	background-color:black;
+	height: 120%;
+	margin: 0;
+	}
+/*
+	.full-height {
+	height: 50%;
+	}
+*/
+}
+
+p {
+	text-shadow: 1px 1px #ffffff;
+	color: #000000; 
+	font-family: Papyrus;
+	font-size: 20px;
+}
+
+p1 {
+	text-shadow: 1px 1px #ffffff;
+	color: #000000; 
+	font-family: Papyrus;
+	font-size: 25px;
+}
+
+p2 {
+	text-shadow: 1px 1px #ffffff;
+	color: #000000; 
+	font-family: Papyrus;
+	font-size: 20px;
+}
+
+h3 {
+	font-family: Papyrus;
+	color: Purple;
+}
+
+/*
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 2.5s ease-in-out infinite alternate;
+  -moz-animation: glow 2.5s ease-in-out infinite alternate;
+  animation: glow 2.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px #37206e, 0 0 40px #37206e, 0 0 50px #37206e, 0 0 60px #37206e, 0 0 70px #37206e;
+  }
+  
+  to {
+    text-shadow: 0 0 20px black, 0 0 30px #ff4da6, 0 0 40px #8f0047, 0 0 50px #8f0047, 0 0 60px #8f0047, 0 0 70px #8f0047, 0 0 80px #8f0047;
+  }
+
+}
+
+.glow1 {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 2.5s ease-in-out infinite alternate;
+  -moz-animation: glow 2.5s ease-in-out infinite alternate;
+  animation: glow 2.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px #37206e, 0 0 40px #37206e, 0 0 50px #37206e, 0 0 60px #37206e, 0 0 70px #37206e;
+  }
+  
+  to {
+    text-shadow: 0 0 20px black, 0 0 30px #ff4da6, 0 0 40px #8f0047, 0 0 50px #8f0047, 0 0 60px #8f0047, 0 0 70px #8f0047, 0 0 80px #8f0047;
+  }
+
+}
+
+.glow2 {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 2.5s ease-in-out infinite alternate;
+  -moz-animation: glow 2.5s ease-in-out infinite alternate;
+  animation: glow 2.5s ease-in-out infinite alternate;
+}
+*/
+		/* width */
+		::-webkit-scrollbar {
+		width: 10px;
+	}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+		background: radial-gradient(#4a4a4a , black); 
+	}
+ 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+		background: radial-gradient(#4a4a4a , black); 
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+		background: radial-gradient(#4a4a4a , black); 
+	}

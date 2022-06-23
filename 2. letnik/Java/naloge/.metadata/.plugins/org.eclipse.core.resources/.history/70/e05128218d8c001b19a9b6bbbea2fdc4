@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class vaja3 {
+//Napiši program, ki prebere 14 števil, najveèje prebrano število vzame za spodnjo mejo intervala, 
+//vsoto zadnjih šestih prebranih števil pa za zgornjo mejo intervala. 
+//Nato izpiše povpreèno vrednost na tem intervalu.
+	public static void main(String[] args) {
+		try (Scanner vhod = new Scanner(System.in)){
+			
+			int max = -999999999;
+			int zgo_meja = 0;
+			int vsota = 0;
+			int povp = 0;
+			
+			for(int i = 1; i <= 14; i++)
+			{
+				System.out.print("Vnesi "+i+". število: ");
+				int x = vhod.nextInt();
+				
+				if(x > max)
+				{
+					max = x;
+				}
+			}
+			
+		}
+	}
+
+}

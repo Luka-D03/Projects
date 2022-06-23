@@ -1,0 +1,10 @@
+package naloge12_5;
+//Napiši program, ki izpiše liha števila med 3 in 58 in vsoto sodih števil na tem intervalu.
+public class Vaja1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,9 @@
+
+public class vaja1 {
+//Napiši program, ki izpiše vsoto lihih števil na intervalu med 2 in 35 in števila deljiv s tri med 9 in 18.
+	public static void main(String[] args) {
+		
+
+	}
+
+}

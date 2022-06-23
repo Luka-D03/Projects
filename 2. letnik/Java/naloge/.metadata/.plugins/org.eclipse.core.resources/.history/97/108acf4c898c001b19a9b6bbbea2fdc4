@@ -1,0 +1,30 @@
+
+public class vaja3 {
+//Napiši program, ki prebere 14 števil, najveèje prebrano število vzame za spodnjo mejo intervala, 
+//vsoto zadnjih šestih prebranih števil pa za zgornjo mejo intervala. 
+//Nato izpiše povpreèno vrednost na tem intervalu.
+	public static void main(String[] args) {
+		
+		int vsota = 0;
+		
+		System.out.println("števila deljiva s 3 so: ");
+		for(int i = 3; i<35; i++)
+		{
+			if(i % 2 == 1)
+			{
+				vsota += i;
+			}
+			
+			if(i > 9 && i < 18)
+			{
+				if(i % 3 == 0)
+				{
+					System.out.println(i);
+				}
+			}
+		}
+		System.out.println("Vsota je: "+vsota);
+
+	}
+
+}

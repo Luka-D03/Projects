@@ -1,0 +1,22 @@
+import java.util.Scanner;
+//Napiši program, ki prebere meji intervala. Razlika med zgornjo in spodnjo mejo mora biti najmanj 14 in največ 54.
+//V primeru, da to ne drži, znova preberemo drugo mejo, če je razlika manjša od 14. V primeru, da je večja od 54, pa ponovno preberemo prvo mejo.
+//Na intervalu liha števila množimo s 4 in seštejemo v vsota1, soda pa s 5 in seštejemo v vsota2.
+//Vsoti zmnožimo in na koncu izpišemo rezultat.
+public class Vaja4 {
+
+	public static void main(String[] args) {
+		int z=1;
+		int n=1;
+		//prva
+		for (int i=1; i<=4; i++)
+		{
+			for (int j=1; j<=i; j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
+}

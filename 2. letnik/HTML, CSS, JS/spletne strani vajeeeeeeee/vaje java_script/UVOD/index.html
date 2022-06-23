@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Žarnica</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<h2>Kaj lahko naredim s JavaScript?</h2>
+
+	<p>
+		V tem primeru naša JavaScript spremeni vrednost poti do fotografije (oziroma fotografijo).
+	</p>
+
+	<img src="images/zarnicaOFF.gif" id="zarnica">
+
+	<br>
+
+	<button class="gumb" onclick="document.getElementById('zarnica').src='images/zarnicaON.gif'">
+		Prižgi žarnico
+	</button>
+
+	<button class="gumb" onclick="document.getElementById('zarnica').src='images/zarnicaOFF.gif'">
+		Ugasni žarnico
+	</button>
+
+
+</body>
+</html>
